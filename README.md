@@ -1,2 +1,2 @@
 # Projeto-PowerFit
-TCC
+Projeto de Conclusao de Curso :)
