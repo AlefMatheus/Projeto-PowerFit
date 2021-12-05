@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url();
+    background-color: #dab900;
+    height: 100%;   
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+#textTitulos {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    margin: auto;
+    width: 500px;
+    box-shadow: yellow 5px 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+p{
+    font-size: medium;
+}
+
+/** -----------------------MODALIDADES-------------------------**/
+#modalidades {
+    overflow: hidden;
+    background-size: cover;
+    padding: 30px;
+    padding-bottom: 120px;
+    background-image: url('https://i.ibb.co/k5rZNgf/Old-black-background-Grunge-texture-Dark-wallpaper-Blackboard-Chalkboard-room-Wall.jpg');
+    margin-top: 20px;
+    
+}
+
+#textParagrafosModalidades{
+    color: white;
+}
+
+#btsaiba {
+    margin-top: 15px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+#btsaiba:hover {
+    box-shadow: yellow 5px 5px;
+    transition: 0.5s;
+    background-color: black;
+    color: yellow;
+}
+    
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div{
+    flex: 1 1 100px;
+}
+
+/** -----------------------------DIA TREINO-------------------------**/
+#area-dicas{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+/* ------------------------------CARROUSEL-----------------------------*/
+
+
+
+#meuCarousel {
+    margin-top: 40px;
+    border-top: none;
+}
+
+#imagemCarousel {
+    height: 500px;
+}
+
+/*Footer*/
+div#principal {
+    padding: 50px;
+    padding-bottom: 100px;
+    background-color:#090909;
+    margin-bottom: 100px;
+}
+
+div#subPrincipal {
+    border-left: 1px solid yellow;
+    color: #ffff;
+}
+
+/* ----------------------NAVBAR ------------------*/
+
+.navbar-default {
+    background-color: #090909;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #f9dc00;
+}
+
+.navbar-default .navbar-text {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #f9dc00;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #f9dc00;
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #000000;
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: aliceblue;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: aliceblue;
+}
+
+.navbar-default .navbar-link {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-link:hover {
+    color: #f9dc00;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: aliceblue;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #f9dc00;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #000000;
+        background-color: #f9dc00;
+    }
+}
