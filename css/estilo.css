@@ -152,7 +152,7 @@ div.row {
     width: 400px;
     padding: 30px;
     border-radius: 10px;
-    border: 2px black solid;
+    border: 3px solid black;
     font-size: 1.9rem;
     text-align: justify;
     margin: auto;
@@ -203,7 +203,7 @@ div.row {
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    border: solid 4px #f9dc00;
+    border: solid 4px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
@@ -239,6 +239,17 @@ div.row {
 
 
 /* FOOTER */
+
+#assine {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#assine:hover {
+    color: #fffb00;
+    transition: 0.5s;
+    text-decoration: none;
+}
 
 div#principal {
     margin-top: 40px;
