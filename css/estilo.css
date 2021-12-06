@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+
 /* BANNER */
 
 #banner {
@@ -61,10 +62,13 @@ video {
     padding: 20px;
 }
 
+
 /* PLANOS */
-img {
+
+img#foto,
+img#dicas {
     max-width: 100%;
-    border: 2px solid #f9dc00;
+    border: 3px solid #f9dc00;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -140,16 +144,24 @@ div.row {
     margin-right: auto;
 }
 
+
 /* EQUIPE */
+
 #segundaColuna {
-    height: 350px;
+    height: auto;
+    width: 400px;
+    padding: 30px;
     border-radius: 10px;
     border: 2px black solid;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     text-align: justify;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 60px;
+}
+
+#linhaEquipe {
+    margin: auto;
 }
 
 #botaoLinha {
@@ -175,7 +187,9 @@ div.row {
     opacity: 0.9;
 }
 
+
 /* ENCONTRA AQUI */
+
 #encontra {
     overflow: hidden;
     background-image: url('https://i.ibb.co/k5rZNgf/Old-black-background-Grunge-texture-Dark-wallpaper-Blackboard-Chalkboard-room-Wall.jpg');
@@ -223,7 +237,9 @@ div.row {
     color: yellow;
 }
 
+
 /* FOOTER */
+
 div#principal {
     margin-top: 40px;
     padding: 50px;
@@ -234,6 +250,38 @@ div#principal {
 div#subPrincipal {
     border-left: 1px solid yellow;
     color: #ffff;
+}
+
+#social {
+    margin-top: 20px;
+}
+
+#insta,
+#face {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+}
+
+#instagram,
+#facebook {
+    padding-top: 11px;
+    padding-bottom: 14px;
+    padding-right: 3.5px;
+    padding-left: 3px;
+    background-color: #000000;
+    border-radius: 100px;
+}
+
+#instagram:hover {
+    background: rgb(255, 239, 0);
+    background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(164, 17, 126, 1) 48%, rgba(42, 0, 255, 1) 100%);
+}
+
+#facebook:hover {
+    background: rgb(0, 65, 255);
+    background: linear-gradient(90deg, rgba(0, 65, 255, 1) 0%, rgba(45, 76, 242, 1) 40%, rgba(80, 80, 246, 1) 58%, rgba(85, 91, 252, 1) 100%);
 }
 
 
