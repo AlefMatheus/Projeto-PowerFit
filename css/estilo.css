@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BANNER */
+
+#banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+#banner #conteudo {
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+    border: 1px solid white;
+    margin: 100px;
+    margin-top: 150px;
+    box-shadow: yellow 5px 5px;
+}
+
+#banner #conteudo #content {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#background {
+    position: absolute;
+    z-index: 0;
+}
+
+#conteudo {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+}
+
+
+/* PLANOS */
+
+img#foto,
+img#dicas {
+    max-width: 100%;
+    border: 3px solid #f9dc00;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#foto:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#foto {
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#anuncio {
+    background-color: black;
+    padding: 20px;
+    height: 500px;
+    margin: 20px;
+    border: 4px solid yellow;
+    border-top: none;
+}
+
+div.row {
+    display: flex;
+}
+
+.flexbox {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#plano {
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+#planos {
+    background-image: url('https://listenx.com.br/blog/wp-content/uploads/2020/01/original-81f15d95efad8c272364a18694ef916d-1200x675.jpeg');
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#conheca {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    margin: auto;
+    width: 500px;
+    padding: 5px;
+    box-shadow: yellow 5px 5px;
+}
+
+#beneficios {
+    font-size: 1.5rem;
+    color: #ffff;
+    width: 300px;
+    margin-top: 20px;
+}
+
+#fotos {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* EQUIPE */
+
+#segundaColuna {
+    height: auto;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 1.9rem;
+    text-align: justify;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#linhaEquipe {
+    margin: auto;
+}
+
+#botaoLinha {
+    position: absolute;
+    bottom: 0;
+}
+
+#botaoBanner {
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+#botaoBanner:hover {
+    box-shadow: yellow 5px 5px;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+
+/* ENCONTRA AQUI */
+
+#encontra {
+    overflow: hidden;
+    background-image: url('https://i.ibb.co/k5rZNgf/Old-black-background-Grunge-texture-Dark-wallpaper-Blackboard-Chalkboard-room-Wall.jpg');
+    background-size: cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 150px;
+}
+
+#dicas {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#h1encontra {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: yellow 5px 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 10px;
+}
+
+#legenda {
+    text-align: left;
+    color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#btsaiba {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+#btsaiba:hover {
+    box-shadow: yellow 5px 5px;
+    transition: 0.5s;
+    background-color: black;
+    color: yellow;
+}
+
+
+/* FOOTER */
+
+#assine {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#assine:hover {
+    color: #fffb00;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+div#principal {
+    margin-top: 40px;
+    padding: 50px;
+    padding-bottom: 50px;
+    background-color: #090909;
+}
+
+div#subPrincipal {
+    border-left: 1px solid yellow;
+    color: #ffff;
+}
+
+#social {
+    margin-top: 20px;
+}
+
+#insta,
+#face {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+}
+
+#instagram,
+#facebook {
+    padding-top: 11px;
+    padding-bottom: 14px;
+    padding-right: 3.5px;
+    padding-left: 3px;
+    background-color: #000000;
+    border-radius: 100px;
+}
+
+#instagram:hover {
+    background: rgb(255, 239, 0);
+    background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(164, 17, 126, 1) 48%, rgba(42, 0, 255, 1) 100%);
+}
+
+#facebook:hover {
+    background: rgb(0, 65, 255);
+    background: linear-gradient(90deg, rgba(0, 65, 255, 1) 0%, rgba(45, 76, 242, 1) 40%, rgba(80, 80, 246, 1) 58%, rgba(85, 91, 252, 1) 100%);
+}
+
+
+/* NAVBAR */
+
+.navbar-default {
+    background-color: #090909;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #f9dc00;
+}
+
+.navbar-default .navbar-text {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #f9dc00;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #f9dc00;
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #000000;
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #f9dc00;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: aliceblue;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: aliceblue;
+}
+
+.navbar-default .navbar-link {
+    color: aliceblue;
+}
+
+.navbar-default .navbar-link:hover {
+    color: #f9dc00;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: aliceblue;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #f9dc00;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #000000;
+        background-color: #f9dc00;
+    }
+}
