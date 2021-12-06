@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibsle" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="..//Projeto AGT (1)/css/estiloSaibaMais.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<style type="text/css">
+    body,
+    html {
+        height: 100%;
+    }
+    
+    body {
+        background-image: url('https://i.ibb.co/THFNKFT/Seamless-gold-rhombus-grid-pattern-on-black-background-vector.jpg');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="login">
+        <div class="login-form">
+            <div id="backgroundLogin">
+                <div data-aos="fade-down" data-aos-duration="1000" id="bannerLogin">
+                    <h1 id="textH1" class="text-center">PowerFit - Login</h1>
+                </div>
+                <div class="login-form-wrapper">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="exemple@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputSenha" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="inputSenha" placeholder="senha">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input onclick="mostra()" type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Mostrar Senha</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <p style="margin-top: 15px; font-size: 15px;">Não tem uma conta?</p>
+                        <a id="cadastro" class="btn btn-primary" href="#">Cadastre-se agora</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer data-aos="fade-up">
+    <!--SOBRE AGT-->
+    <div id="principal">
+        <div id="subPrincipal" class="container">
+            <h2>Sobre o SGT:</h2>
+            <p>SGT é o sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais! <a id="assine" href="#">Assine já e mantenha-se saudável!</a></p>
+        </div>
+        <br>
+        <div class="container"></div>
+        <div id="subPrincipal" class="container">
+            <h2>Funcionalidades:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <!--FIM SOBRE-->
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script type="text/javascript">
+    function mostra() {
+        var senha = document.getElementById("inputSenha");
+        if (senha.type === "password") {
+            senha.type = "text";
+        } else {
+            senha.type = "password";
+        }
+    }
+</script>
+
+</html>
