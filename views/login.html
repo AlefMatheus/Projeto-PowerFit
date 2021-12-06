@@ -43,7 +43,7 @@
                     <h1 id="textH1" class="text-center">PowerFit - Login</h1>
                 </div>
                 <div class="login-form-wrapper">
-                    <form>
+                    <form id="form">
                         <div class="mb-3">
                             <label for="inputEmail" class="form-label">Email:</label>
                             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="exemple@email.com">
@@ -97,6 +97,19 @@
         } else {
             senha.type = "password";
         }
+    }
+
+    window.onload = function()
+    {
+        document.getElementById("form").addEventListener("submit", login, false);
+    }
+
+    function login(event){
+        event.preventDefault();
+
+        console.log("oi", event)
+
+        window.location.href = "dashboard.html"
     }
 </script>
 
