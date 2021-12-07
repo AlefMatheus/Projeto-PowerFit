@@ -47,7 +47,6 @@ video {
 #banner #conteudo #content {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 }
 
 #background {
@@ -68,8 +67,8 @@ video {
 img#foto,
 img#dicas {
     max-width: 100%;
-    border: 3px solid #f9dc00;
-    border-radius: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #ffee00, #ffae00, #ff9100 100%) 1;
     margin-top: 10px;
 }
 
@@ -99,7 +98,7 @@ div.row {
 }
 
 .flexbox {
-    width: 900px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -152,7 +151,7 @@ div.row {
     width: 400px;
     padding: 30px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
     font-size: 1.9rem;
     text-align: justify;
     margin: auto;
@@ -192,10 +191,10 @@ div.row {
 
 #encontra {
     overflow: hidden;
-    background-image: url('https://i.ibb.co/k5rZNgf/Old-black-background-Grunge-texture-Dark-wallpaper-Blackboard-Chalkboard-room-Wall.jpg');
     background-size: cover;
+    background-color: rgb(12, 12, 12);
     padding: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 150px;
 }
 
@@ -203,8 +202,6 @@ div.row {
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    border: solid 4px rgb(0, 0, 0);
-    border-radius: 10px;
 }
 
 #h1encontra {
@@ -214,27 +211,32 @@ div.row {
     box-shadow: yellow 5px 5px;
     margin-left: 300px;
     margin-right: 300px;
+    margin-bottom: 30px;
     padding: 10px;
 }
 
 #legenda {
-    text-align: left;
-    color: white;
-    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
     margin-left: 5px;
 }
 
 #btsaiba {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #btsaiba:hover {
-    box-shadow: yellow 5px 5px;
     transition: 0.5s;
-    background-color: black;
-    color: yellow;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+#btsaiba:focus {
+    background-color: yellow;
+    transition: 0.5s;
 }
 
 
@@ -299,7 +301,7 @@ div#subPrincipal {
 /* NAVBAR */
 
 .navbar-default {
-    background-color: #090909;
+    background-color: #0f0f0f;
     border: none;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
