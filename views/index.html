@@ -25,10 +25,10 @@
 <body style="margin-top: 20px;">
 
     <!--NAV BAR-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
         <div class="container-fluid">
             <div class="container">
-                <a style="font-size: 2.5rem;" href="#" class="navbar-brand">SGT</a>
+                <a style="font-size: 2.5rem;" href="#" class="navbar-brand">PowerFit</a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barraNav">
 					<span class="icon-bar"></span>
@@ -58,8 +58,7 @@
 
     <!--BANNER-->
     <div id="banner">
-        <video style=" margin-top: 50px;" id="background" src="../video/malhando.mp4" autoplay="true" muted="true" loop="true">
-		</video>
+        <video id="background" src="../video/malhando2.mp4" autoplay="true" muted="true" loop="true"></video>
         <div id="conteudo">
             <h1 id="content">PowerFit - SGT</h1>
         </div>
@@ -73,7 +72,7 @@
     <!--FIM BANNER-->
 
     <!--PLANOS-->
-    <section style="margin-top: 789px;" data-aos="fade" data-aos-duration="500">
+    <section style="margin-top: 740px;" data-aos="fade" data-aos-duration="500">
         <div id="planos" class="col-sm-12">
             <div style="margin-bottom: 20px;" id="conheca" style=" text-align: center;" data-aos="fade-up" data-aos-duration="500">
                 <h2 id="conhecaH2">CONHECA NOSSOS PLANOS:</h2>
@@ -89,7 +88,6 @@
                             <li>Acesso a todos os equipamentos da academia;</li>
                             <li>Área para aeróbicos;</li>
                             <li>Acesso ao Wi-Fi;</li>
-                            <li>*COLOCAR MAIS COISAS*</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
@@ -101,7 +99,7 @@
                             <li>Acesso a todos os equipamentos da academia;</li>
                             <li>Área para aeróbicos;</li>
                             <li>Acesso ao Wi-Fi;</li>
-                            <li>*COLOCAR MAIS COISAS*</li>
+                            <li>40% mais barato.</li>
                         </ul>
                     </div>
                 </div>
@@ -110,30 +108,29 @@
     </section>
     <!--FIM PLANOS-->
 
-
     <!--ENCONTRA AQUI-->
     <section>
         <div id="encontra" class="col-sm-12">
             <h1 id="h1encontra" style="text-align: center;" data-aos="fade" data-aos-duration="1500">O QUE VOCÊ ENCONTRA AQUI:</h1>
             <div class="row">
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" src="https://cursosbig.com.br/wp-content/uploads/2019/04/antioxidante-e-musculacao.jpg.webp"></p>
+                    <p class="text-center"><img id="dicas" src="https://blog.bodytech.com.br/wp-content/uploads/2019/06/bt_musc_header.jpg"></p>
                     <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE MUSCULACAO;</p>
+                        <p class="text-center" id="saiba">DICAS SOBRE MUSCULAÇÃO;</p>
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoMusculacao.html">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1500">
-                    <p class="text-center"><img id="dicas" src="https://prodiet.com.br/wp-content/uploads/post/A-importancia-do-nutricionista-no-tratamento-oncologico.jpg"></p>
+                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
+                    <p class="text-center"><img id="dicas" src="https://i.ibb.co/7zq9Pc2/minimalist-healthy-vegetarian-food-copy-space.jpg"></p>
                     <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE NUTRICAO;</p>
+                        <p class="text-center" id="saiba">DICAS SOBRE NUTRIÇÃO;</p>
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoNutricao.html">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="2000">
-                    <p class="text-center"><img id="dicas" src="https://soulacademia.b-cdn.net/wp-content/uploads/2018/05/vida-saud%C3%A1vel.jpg"></p>
+                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
+                    <p class="text-center"><img id="dicas" src="https://ms-publico.s3-sa-east-1.amazonaws.com/cms/post/2019/11/c_imagens-coaching-gpperformance-saude-bem-estar_a77ed88a66ca830a02dea39fbe015a6e87f942e0.jpg"></p>
                     <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE SAUDE;</p>
+                        <p class="text-center" id="saiba">DICAS SOBRE SAÚDE.</p>
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoSaude.html">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
@@ -143,7 +140,7 @@
     <!--FIM ENCONTRA AQUI-->
 
     <!--EQUIPE-->
-    <section style="margin-top: 30px;" class="flexbox">
+    <section style="margin-top: 30px;" class="flexbox" id="equipeParceria">
         <div class="row" id="linhaEquipe">
             <div id="segundaColuna" class="col-sm-6" data-aos="fade-right" data-aos-duration="500">
                 <h2>NOSSA EQUIPE:</h2>
@@ -166,7 +163,7 @@
             <br>
             <div id="segundaColuna" style="margin-left: 20px;" class="col-sm-6" data-aos="fade-left" data-aos-duration="500">
                 <h2>PARCERIAS:</h2>
-                <li>Profit</li>
+                <li>PowerFit</li>
                 <li>Proquality</li>
                 <li>Smartfit</li>
                 <li>BigGang</li>
@@ -189,8 +186,10 @@
         <div class="container"></div>
         <div id="subPrincipal" class="container">
             <h2>Funcionalidades:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <li>Análise e cáculo de IMC;</li>
+            <li>Gráficos de desempenho;</li>
+            <li>Controle de alimentação e treinos;</li>
+            <li>Gerenciamento de altura e peso.</li>
         </div>
     </div>
     <!--FIM SOBRE-->
@@ -200,5 +199,31 @@
 <script>
     AOS.init();
 </script>
+
+<script>
+    (function() {
+        var menu = document.getElementById('menu');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY == 0) menu.classList.add('navbar-top');
+            else menu.classList.remove('navbar-top');
+        });
+    })();
+    (function() {
+        var menu = document.getElementById('menu');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) menu.classList.add('navbar-top1');
+        });
+    })();
+</script>
+
+<style type="text/css">
+    .navbar-top {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .navbar-top1 {
+        transition: 0.5s;
+    }
+</style>
 
 </html>
