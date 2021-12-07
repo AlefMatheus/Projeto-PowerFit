@@ -9,10 +9,6 @@
                 box-sizing: border-box;
             }
             
-            body {
-                font-family: 'Montserrat', sans-serif;
-            }
-            
             .login {
                 height: 100%;
             }
@@ -28,11 +24,7 @@
             
             #bannerLogin {
                 width: 350px;
-                color: white;
-                background-color: black;
-                padding: 9px;
-                border: 3px solid;
-                border-image: linear-gradient(90deg, #000000, #fffb00 100%) 1;
+                color: rgb(255, 239, 15);
             }
             
             #textH1 {
@@ -40,67 +32,43 @@
             }
             
             .login-form-wrapper {
-                width: 350px;
-                height: 400px;
-                border: 3px solid;
-                border-image: linear-gradient(90deg, #000000, #fffb00 100%) 1;
+                width: 400px;
+                height: auto;
                 max-width: 400px;
                 padding: 20px;
-                background-color: rgba(49, 49, 49, 0.432);
-                padding-bottom: 50px;
-                padding-top: 50px;
+                background-color: rgba(41, 41, 41, 0.712);
+                padding-bottom: 20px;
+                padding-top: 15px;
                 color: white;
-                margin-top: 10px;
-            }
-            
-            #backgroundLogin {
-                background-image: url('https://i.ibb.co/THFNKFT/Seamless-gold-rhombus-grid-pattern-on-black-background-vector.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                object-fit: cover;
-                opacity: 0.8;
-                border: solid 5px rgba(0, 0, 0, 0.719);
-                width: 500px;
-                height: 590px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+                border-radius: 9px;
             }
             
             .login-form-wrapper button {
                 width: 100%;
-                background-color: rgba(0, 0, 0, 0.993);
+                background: rgb(251, 203, 17);
+                background: linear-gradient(90deg, rgb(255, 204, 0) 0%, rgb(255, 115, 0) 50%, rgb(255, 81, 0) 100%);
                 border: none;
+                color: rgb(255, 255, 255);
             }
             
             .login-form-wrapper button:hover {
-                background: rgb(255, 238, 0);
-                color: #000000;
-                font-weight: bolder;
+                background: rgb(255, 115, 0);
                 transition: 0.5s;
             }
             
             input[type="password"],
             [type="email"] {
                 outline: none;
-                font-weight: bolder;
             }
             
             #cadastro {
                 margin-top: -10px;
                 text-decoration: none;
-                color: white;
-                background-color: #000000;
-                padding: 6px;
-                border: none;
-                font-size: 14px;
+                color: rgb(255, 255, 255);
             }
             
             #cadastro:hover {
-                background: rgb(255, 238, 0);
-                color: #000000;
-                font-weight: bolder;
+                color: #fffb00;
                 transition: 0.5s;
             }
             
