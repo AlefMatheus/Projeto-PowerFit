@@ -22,14 +22,15 @@
 </head>
 
 <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
     body,
     html {
         height: 100%;
+        font-family: Nunito;
     }
     
     body {
-        background-image: url('https://i.ibb.co/THFNKFT/Seamless-gold-rhombus-grid-pattern-on-black-background-vector.jpg');
-        object-fit: cover;
+        background-image: url('https://i.ibb.co/8Y6Q3W6/Design-sem-nome-4.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -38,51 +39,32 @@
 <body>
     <div class="login">
         <div class="login-form">
-            <div id="backgroundLogin">
-                <div data-aos="fade-down" data-aos-duration="1000" id="bannerLogin">
-                    <h1 id="textH1" class="text-center">PowerFit - Login</h1>
-                </div>
-                <div class="login-form-wrapper">
-                    <form id="form">
-                        <div class="mb-3">
-                            <label for="inputEmail" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="exemple@email.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputSenha" class="form-label">Senha:</label>
-                            <input type="password" class="form-control" id="inputSenha" placeholder="senha">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input onclick="mostra()" type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Mostrar Senha</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
-                        <p style="margin-top: 15px; font-size: 15px;">Não tem uma conta?</p>
-                        <a id="cadastro" class="btn btn-primary" href="#">Cadastre-se agora</a>
-                    </form>
-                </div>
+            <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
+                <h1 id="textH1" class="text-left">PowerFit - Login</h1>
+                <p style="color: rgb(255, 255, 255);">Junte-se a nós :)</p>
+            </div>
+            <div class="login-form-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="exemple@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputSenha" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="senha">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input onclick="mostra()" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Mostrar Senha</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <p style="margin-top: 15px; font-size: 16px;">Não tem uma conta? <a id="cadastro" href="cadastro.html">Cadastre-se agora</a></p>
+                </form>
             </div>
         </div>
     </div>
 </body>
 
-<footer data-aos="fade-up">
-    <!--SOBRE AGT-->
-    <div id="principal">
-        <div id="subPrincipal" class="container">
-            <h2>Sobre o SGT:</h2>
-            <p>SGT é o sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais! <a id="assine" href="#">Assine já e mantenha-se saudável!</a></p>
-        </div>
-        <br>
-        <div class="container"></div>
-        <div id="subPrincipal" class="container">
-            <h2>Funcionalidades:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </div>
-    <!--FIM SOBRE-->
-</footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -99,12 +81,11 @@
         }
     }
 
-    window.onload = function()
-    {
+    window.onload = function() {
         document.getElementById("form").addEventListener("submit", login, false);
     }
 
-    function login(event){
+    function login(event) {
         event.preventDefault();
 
         console.log("oi", event)
