@@ -9,6 +9,7 @@ body {
     background-image: url();
     background-color: #dab900;
     height: 100%;   
+    
 }
 img{
     max-width: 100%;
@@ -26,10 +27,6 @@ img{
     padding: 10px;
 
 }
-p{
-    font-size: medium;
-}
-
 /** -----------------------MODALIDADES-------------------------**/
 #modalidades {
     overflow: hidden;
@@ -91,18 +88,30 @@ p{
     height: 500px;
 }
 
-/*Footer*/
+/* FOOTER */
+
+#assine {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#assine:hover {
+    color: #fffb00;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
 div#principal {
     padding: 50px;
-    padding-bottom: 100px;
-    background-color:#090909;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
+    background-color: #090909;
 }
 
 div#subPrincipal {
     border-left: 1px solid yellow;
     color: #ffff;
 }
+
 
 /* ----------------------NAVBAR ------------------*/
 
