@@ -1,2 +1,2 @@
 # Projeto-PowerFit
-Projeto de Conclusao de Curso :)
+Projeto de Conclusao de Curso :D
