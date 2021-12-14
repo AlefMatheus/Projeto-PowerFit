@@ -1,92 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 
-html,
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url();
-    background-color: #dab900;
-    height: 100%;   
-    
+    font-family: Comfortaa;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-img{
-    max-width: 100%;
-    display: block;
+
+
+/* BANNER */
+
+#banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-#textTitulos {
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#banner video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+#banner #conteudo {
+    font-family: Comfortaa;
     text-align: center;
     color: white;
-    background-color: black;
-    border: 1px solid white;
-    margin: auto;
-    width: 500px;
-    box-shadow: yellow 5px 5px;
-    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+#content {
+    border-bottom: #ffffff 1px solid;
+    width: auto;
     padding: 10px;
-
+    margin-top: 90px;
 }
-/** -----------------------MODALIDADES-------------------------**/
+
+#background {
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* Modalidades */
+
+.container {
+    width: 100%;
+}
+
 #modalidades {
-    overflow: hidden;
+    font-family: Outfit;
     background-size: cover;
-    padding: 30px;
-    padding-bottom: 120px;
-    background-image: url('https://i.ibb.co/k5rZNgf/Old-black-background-Grunge-texture-Dark-wallpaper-Blackboard-Chalkboard-room-Wall.jpg');
-    margin-top: 20px;
-    
+    background: rgb(255, 143, 9);
+    background: linear-gradient(90deg, rgba(255, 143, 9, 1) 0%, rgb(252, 193, 0) 86%, rgb(255, 208, 0) 100%);
+    padding: 50px;
+    padding-bottom: 170px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: left;
 }
 
-#textParagrafosModalidades{
-    color: white;
+#textTitulos {
+    border-bottom: 1px solid white;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+#textTitulos2 {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    color: #ffffff;
+    font-family: Outfit;
+}
+
+h3.text-center {
+    margin-bottom: 20px;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 #btsaiba {
-    margin-top: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-family: Comfortaa;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 15px;
 }
 
 #btsaiba:hover {
-    box-shadow: yellow 5px 5px;
     transition: 0.5s;
-    background-color: black;
-    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
 }
-    
+
+#btsaiba:focus {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s;
+}
+
+.flex {
+    margin-top: 20px;
+}
 
 
-.flex{
+/* Dicas */
+
+#containerDicas {
+    font-family: Outfit;
+    background-size: cover;
+    background: rgb(18, 18, 18);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 50%, rgb(12, 12, 12) 100%);
+    padding: 50px;
+    padding-bottom: 50px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
 }
 
-.flex > div{
-    flex: 1 1 100px;
+#areaDicas {
+    text-align: center;
 }
 
-/** -----------------------------DIA TREINO-------------------------**/
-#area-dicas{
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    
+#imgDicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* ------------------------------CARROUSEL-----------------------------*/
-
-
-
-#meuCarousel {
-    margin-top: 40px;
-    border-top: none;
+#imagemDicas {
+    margin-top: 20px;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
 }
 
-#imagemCarousel {
-    height: 500px;
+#imagemDicas:hover {
+    opacity: 0.4;
+    transition: 0.5s;
 }
+
+
+/* Carousel */
+
+#pagina {
+    background: rgb(18, 18, 18);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 50%, rgb(12, 12, 12) 100%);
+    padding-bottom: 100px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagem {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* FOOTER */
 
@@ -108,17 +216,17 @@ div#principal {
 }
 
 div#subPrincipal {
-    border-left: 1px solid yellow;
+    border-left: 1px solid rgb(255, 255, 255);
     color: #ffff;
 }
 
 
-/* ----------------------NAVBAR ------------------*/
+/* NAVBAR */
 
 .navbar-default {
-    background-color: #090909;
+    background-color: #0f0f0f;
     border: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: Comfortaa;
     padding: 10px;
 }
 
@@ -129,6 +237,7 @@ div#subPrincipal {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-text {
@@ -142,6 +251,7 @@ div#subPrincipal {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -149,6 +259,7 @@ div#subPrincipal {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #f9dc00;
     background-color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -156,15 +267,17 @@ div#subPrincipal {
 .navbar-default .navbar-nav>.open>a:focus {
     color: #000000;
     background-color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #f9dc00;
+    border-color: #f9dc0000;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #f9dc00;
+    background-color: #f9bf00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -182,6 +295,7 @@ div#subPrincipal {
 
 .navbar-default .navbar-link:hover {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -191,11 +305,13 @@ div#subPrincipal {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
         color: #f9dc00;
+        transition: 0.5s;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
         color: #000000;
         background-color: #f9dc00;
+        transition: 0.5s;
     }
 }
