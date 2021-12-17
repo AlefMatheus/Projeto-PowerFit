@@ -3,10 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
-body {
-    font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Comfortaa;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
@@ -26,7 +35,8 @@ video {
 }
 
 #banner video {
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -34,19 +44,43 @@ video {
 }
 
 #banner #conteudo {
+    font-family: Comfortaa;
     text-align: center;
     color: white;
-    background-color: black;
-    opacity: 0.9;
-    border: 1px solid white;
-    margin: 100px;
     margin-top: 150px;
-    box-shadow: yellow 5px 5px;
 }
 
-#banner #conteudo #content {
-    margin: 0;
-    padding: 0;
+#botaoBanner {
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 200px;
+    color: white;
+    background-color: rgb(5, 5, 5);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#botaoColuna {
+    bottom: 0;
+    margin-top: 180px;
+}
+
+#botaoBanner:hover {
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#content {
+    border-bottom: #ffffff 1px solid;
+    width: auto;
+    padding: 10px;
+}
+
+#content2 {
+    width: auto;
+    margin: auto;
+    font-size: medium;
 }
 
 #background {
@@ -58,185 +92,199 @@ video {
     position: absolute;
     z-index: 1;
     display: flex;
+    flex-direction: column;
     padding: 20px;
 }
 
 
 /* PLANOS */
 
+#planos {
+    background: rgb(255, 143, 9);
+    background: linear-gradient(90deg, rgba(255, 143, 9, 1) 0%, rgba(252, 209, 0, 1) 86%, rgba(255, 247, 31, 1) 100%);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.flexbox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
 img#foto,
 img#dicas {
     max-width: 100%;
-    border: 2px solid;
-    border-image: linear-gradient(90deg, #ffee00, #ffae00, #ff9100 100%) 1;
+    border: 1px solid white;
     margin-top: 10px;
 }
 
 #foto:hover {
-    opacity: 0.3;
+    opacity: 0.8;
     transition: 0.5s;
     cursor: pointer;
 }
 
 #foto {
-    background-color: black;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 #anuncio {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.966);
     padding: 20px;
-    height: 500px;
-    margin: 20px;
-    border: 4px solid yellow;
-    border-top: none;
+    height: auto;
+    margin: 10px;
+    border: rgba(255, 255, 255, 0.096) solid 2px;
 }
 
 div.row {
     display: flex;
 }
 
-.flexbox {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-
-#plano {
-    background-color: white;
-    width: 200px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 70px;
-}
-
-#planos {
-    background-image: url('https://listenx.com.br/blog/wp-content/uploads/2020/01/original-81f15d95efad8c272364a18694ef916d-1200x675.jpeg');
-    padding: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #conheca {
+    font-family: Outfit;
     text-align: center;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     margin: auto;
     width: 500px;
-    padding: 5px;
-    box-shadow: yellow 5px 5px;
+    padding-bottom: 5px;
 }
 
 #beneficios {
-    font-size: 1.5rem;
-    color: #ffff;
+    font-family: Outfit;
+    font-size: 1.8rem;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
     width: 300px;
     margin-top: 20px;
+    border-top: 1px rgb(255, 255, 255) solid;
+}
+
+#beneficiosLi {
+    margin-top: 10px;
 }
 
 #fotos {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 
 /* EQUIPE */
 
+#containerEquipe {
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 #segundaColuna {
-    height: auto;
-    width: 400px;
-    padding: 30px;
+    font-family: Comfortaa;
+    height: 500px;
     border-radius: 10px;
     border: 3px solid rgb(0, 0, 0);
     font-size: 1.9rem;
-    text-align: justify;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
 }
 
 #linhaEquipe {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#botaoLinha {
-    position: absolute;
-    bottom: 0;
-}
-
-#botaoBanner {
-    padding: 30px;
-    margin-bottom: 30px;
-    height: 100px;
-    width: 200px;
-    color: white;
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 10px;
-    font-size: 1.6rem;
-}
-
-#botaoBanner:hover {
-    box-shadow: yellow 5px 5px;
-    transition: 0.5s;
-    opacity: 0.9;
+#h2Equipe {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
 }
 
 
 /* ENCONTRA AQUI */
 
+#linhaEncontra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 #encontra {
-    overflow: hidden;
+    font-family: Outfit;
     background-size: cover;
-    background-color: rgb(12, 12, 12);
+    background: rgb(18, 18, 18);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(5, 5, 5) 50%, rgb(10, 10, 10) 100%);
     padding: 50px;
-    margin-bottom: 10px;
-    padding-bottom: 150px;
+    padding-bottom: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #dicas {
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 300px;
 }
 
 #h1encontra {
     color: white;
-    background-color: black;
-    border: 1px solid white;
-    box-shadow: yellow 5px 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+#h3encontra {
+    color: white;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    margin: auto;
+    width: 20%;
     margin-bottom: 30px;
     padding: 10px;
 }
 
 #legenda {
     color: rgb(255, 255, 255);
-    margin-top: 15px;
-    margin-left: 5px;
+    margin: auto;
 }
 
 #btsaiba {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Comfortaa;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 15px;
 }
 
 #btsaiba:hover {
     transition: 0.5s;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #btsaiba:focus {
-    background-color: yellow;
-    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s;
 }
 
 
@@ -254,15 +302,18 @@ div.row {
 }
 
 div#principal {
-    margin-top: 40px;
     padding: 50px;
     padding-bottom: 50px;
     background-color: #090909;
 }
 
 div#subPrincipal {
-    border-left: 1px solid yellow;
+    border-left: 1px solid rgb(255, 255, 255);
     color: #ffff;
+}
+
+.text-right {
+    background-color: #090909;
 }
 
 #social {
@@ -303,7 +354,7 @@ div#subPrincipal {
 .navbar-default {
     background-color: #0f0f0f;
     border: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: Comfortaa;
     padding: 10px;
 }
 
@@ -314,6 +365,7 @@ div#subPrincipal {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-text {
@@ -327,6 +379,7 @@ div#subPrincipal {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -334,6 +387,7 @@ div#subPrincipal {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #f9dc00;
     background-color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -341,15 +395,17 @@ div#subPrincipal {
 .navbar-default .navbar-nav>.open>a:focus {
     color: #000000;
     background-color: #f9dc00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #f9dc00;
+    border-color: #f9dc0000;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #f9dc00;
+    background-color: #f9bf00;
+    transition: 0.5s;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -367,6 +423,7 @@ div#subPrincipal {
 
 .navbar-default .navbar-link:hover {
     color: #f9dc00;
+    transition: 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -376,11 +433,13 @@ div#subPrincipal {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
         color: #f9dc00;
+        transition: 0.5s;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
         color: #000000;
         background-color: #f9dc00;
+        transition: 0.5s;
     }
 }
