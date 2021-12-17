@@ -20,167 +20,167 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>Home - PowerFit</title>
-</head>
+</head <body style="margin-top: 20px;">
 
-<body style="margin-top: 20px;">
-
-    <!--NAV BAR-->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
-        <div class="container-fluid">
-            <div class="container">
-                <a style="font-size: 2.5rem;" href="#" class="navbar-brand">PowerFit</a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barraNav">
+<!--NAV BAR-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
+    <div class="container-fluid">
+        <div class="container">
+            <a style="font-size: 2.5rem;" href="#" class="navbar-brand">PowerFit</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barraNav">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-                </div>
-                <div id="barraNav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdownn">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">DICAS<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../views/resumoMusculacao.html">EXERCICÍOS FÍSICOS</a></li>
-                                <li><a href="../views/resumoNutricao.html">NUTRIÇÃO</a></li>
-                                <li><a href="../views/resumoSaude.html">SAÚDE</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </nav>
-    <!--FIM NAVBAR -->
-
-    <!--BANNER-->
-    <div id="banner">
-        <video id="background" src="../video/malhando2.mp4" autoplay="true" muted="true" loop="true"></video>
-        <div id="conteudo">
-            <h1 id="content">PowerFit - SGT</h1>
-        </div>
-
-        <div class="row" id="botaoLinha">
-            <div data-aos="fade-up" data-aos-duration="1000" class="col-sm-6" id="botaoColuna">
-                <button id="botaoBanner">Faça sua inscrição</button>
+            <div id="barraNav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdownn">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">DICAS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../views/resumoMusculacao.html">EXERCICÍOS FÍSICOS</a></li>
+                            <li><a href="../views/resumoNutricao.html">NUTRIÇÃO</a></li>
+                            <li><a href="../views/resumoSaude.html">SAÚDE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <!--FIM BANNER-->
+</nav>
+<!--FIM NAVBAR -->
 
-    <!--PLANOS-->
-    <section style="margin-top: 740px;" data-aos="fade" data-aos-duration="500">
-        <div id="planos" class="col-sm-12">
-            <div style="margin-bottom: 20px;" id="conheca" style=" text-align: center;" data-aos="fade-up" data-aos-duration="500">
-                <h2 id="conhecaH2">CONHECA NOSSOS PLANOS:</h2>
+<!--BANNER-->
+<div id="banner">
+    <div id="video">
+        <video id="background" src="../video/malhando2.mp4" autoplay="true" muted="true" loop="true"></video>
+    </div>
+    <div id="conteudo">
+        <h1 data-aos="fade-up" data-aos-duration="1500" id="content">Bem vindo ao SGT - PowerFit</h1>
+        <div data-aos="fade-up" data-aos-duration="1500" id="content2">
+            <h4 style="margin-top: 15px;">O seu site de gerenciamento de treinos</h4>
+        </div>
+        <br>
+        <form id="form">
+            <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12" id="botaoColuna">
+                <button type="submit" id="botaoBanner">Faça sua inscrição</button>
             </div>
-            <div class="flexbox">
-                <div id="fotos" class="row">
-                    <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                        <div id="plano">
-                            <h2>Mensal</h2>
-                        </div>
-                        <div id="foto"><img src="https://i.ibb.co/YN13nMM/Mensal-Livre.png"></div>
-                        <ul id="beneficios">
-                            <li>Acesso a todos os equipamentos da academia;</li>
-                            <li>Área para aeróbicos;</li>
-                            <li>Acesso ao Wi-Fi;</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                        <div id="plano">
-                            <h2>Anual</h2>
-                        </div>
-                        <div id="foto"><img src="https://i.ibb.co/YN13nMM/Mensal-Livre.png"></div>
-                        <ul id="beneficios">
-                            <li>Acesso a todos os equipamentos da academia;</li>
-                            <li>Área para aeróbicos;</li>
-                            <li>Acesso ao Wi-Fi;</li>
-                            <li>40% mais barato.</li>
-                        </ul>
-                    </div>
+        </form>
+    </div>
+</div>
+<!--FIM BANNER-->
+
+<!--PLANOS-->
+<div class="container" id="planos" style="margin-top: 715px;">
+    <div style="margin-bottom: 20px;" id="conheca" style=" text-align: center;" data-aos="fade-up" data-aos-duration="500">
+        <h1 id="conhecaH2">CONHECA NOSSOS PLANOS:</h1>
+    </div>
+    <div class="flexbox">
+        <div id="fotos" class="row">
+            <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
+                <div id="foto"><img class="img-responsive" src="https://i.ibb.co/xshT854/Mensal-Livre-1.png"></div>
+                <ul id="beneficios">
+                    <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
+                    <li id="beneficiosLi">Área para aeróbicos;</li>
+                    <li id="beneficiosLi">Natação;</li>
+                    <li id="beneficiosLi">Crossfit;</li>
+                    <li id="beneficiosLi">Pilates;</li>
+                    <li id="beneficiosLi">Acesso ao Wi-Fi.</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
+                <div id="foto"><img class="img-responsive" src="https://i.ibb.co/XtMDZR1/Mensal-Livre-2.png"></div>
+                <ul id="beneficios">
+                    <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
+                    <li id="beneficiosLi">Área para aeróbicos;</li>
+                    <li id="beneficiosLi">Natação;</li>
+                    <li id="beneficiosLi">Crossfit;</li>
+                    <li id="beneficiosLi">Pilates;</li>
+                    <li id="beneficiosLi">Acesso ao Wi-Fi;</li>
+                    <li id="beneficiosLi">10% mais barato.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FIM PLANOS-->
+
+<!--ENCONTRA AQUI-->
+<div class="container-fluid" id="encontra">
+    <h2 id="h1encontra" style="text-align: center;" data-aos="fade" data-aos-duration="1500">O QUE VOCÊ ENCONTRA NA POWERFIT - SGT</h2>
+    <br>
+    <h3 id="h3encontra" style="text-align: center;" data-aos="fade-up" data-aos-duration="1000">Dicas sobre:</h3>
+    <div class="row">
+        <div class="flex">
+            <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
+                <p class="text-center"><img id="dicas" class="img-responsive" src="https://i.ibb.co/bFvrQqc/SA-DE-1.png"></p>
+                <div id="legenda">
+                    <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoMusculacao.html">Saiba mais &raquo;</a></p>
+                </div>
+            </div>
+            <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
+                <p class="text-center"><img id="dicas" class="img-responsive" src="https://i.ibb.co/1Qn0YMX/SA-DE-2.png"></p>
+                <div id="legenda">
+                    <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoNutricao.html">Saiba mais &raquo;</a></p>
+                </div>
+            </div>
+            <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
+                <p class="text-center"><img id="dicas" class="img-responsive" src="https://i.ibb.co/ZH0xFLf/SA-DE.png"></p>
+                <div id="legenda">
+                    <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoSaude.html">Saiba mais &raquo;</a></p>
                 </div>
             </div>
         </div>
-    </section>
-    <!--FIM PLANOS-->
+    </div>
+</div>
+<!--FIM ENCONTRA AQUI-->
 
-    <!--ENCONTRA AQUI-->
-    <section>
-        <div id="encontra" class="col-sm-12">
-            <h1 id="h1encontra" style="text-align: center;" data-aos="fade" data-aos-duration="1500">O QUE VOCÊ ENCONTRA AQUI:</h1>
-            <div class="row">
-                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" src="https://blog.bodytech.com.br/wp-content/uploads/2019/06/bt_musc_header.jpg"></p>
-                    <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE MUSCULAÇÃO;</p>
-                        <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoMusculacao.html">Saiba mais &raquo;</a></p>
-                    </div>
-                </div>
-                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" src="https://i.ibb.co/7zq9Pc2/minimalist-healthy-vegetarian-food-copy-space.jpg"></p>
-                    <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE NUTRIÇÃO;</p>
-                        <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoNutricao.html">Saiba mais &raquo;</a></p>
-                    </div>
-                </div>
-                <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" src="https://ms-publico.s3-sa-east-1.amazonaws.com/cms/post/2019/11/c_imagens-coaching-gpperformance-saude-bem-estar_a77ed88a66ca830a02dea39fbe015a6e87f942e0.jpg"></p>
-                    <div id="legenda">
-                        <p class="text-center" id="saiba">DICAS SOBRE SAÚDE.</p>
-                        <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button" href="../views/resumoSaude.html">Saiba mais &raquo;</a></p>
-                    </div>
-                </div>
-            </div>
+<!--EQUIPE-->
+<div class="container" id="containerEquipe">
+    <div class="row" id="linhaEquipe">
+        <div id="segundaColuna" class="col-sm-4" data-aos="fade-right" data-aos-duration="500">
+            <h2 id="h2Equipe">NOSSA EQUIPE:</h2>
+            <p id="social">João Pedro F. B. Ramos</p>
+            <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
+            <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
+
+            <p id="social">Alef Matheus T. Garcia</p>
+            <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
+            <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
+
+            <p id="social">Caique de Magalhães Rozatto</p>
+            <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
+            <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
+
+            <p id="social">Thiago Azevedo Araújo</p>
+            <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
+            <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
         </div>
-    </section>
-    <!--FIM ENCONTRA AQUI-->
-
-    <!--EQUIPE-->
-    <section style="margin-top: 30px;" class="flexbox" id="equipeParceria">
-        <div class="row" id="linhaEquipe">
-            <div id="segundaColuna" class="col-sm-6" data-aos="fade-right" data-aos-duration="500">
-                <h2>NOSSA EQUIPE:</h2>
-                <p id="social">João Pedro F. B. Ramos</p>
-                <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
-                <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
-
-                <p id="social">Alef Matheus T. Garcia</p>
-                <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
-                <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
-
-                <p id="social">Caique de Magalhães Rozatto</p>
-                <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
-                <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
-
-                <p id="social">Thiago Azevedo Araújo</p>
-                <a id="instagram" href=""><img id="insta" src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
-                <a id="facebook" href=""><img id="face" src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
-            </div>
-            <br>
-            <div id="segundaColuna" style="margin-left: 20px;" class="col-sm-6" data-aos="fade-left" data-aos-duration="500">
-                <h2>PARCERIAS:</h2>
-                <li>PowerFit</li>
-                <li>Proquality</li>
-                <li>Smartfit</li>
-                <li>BigGang</li>
-                <li>WorkAcademy</li>
-                <li>AnabolMusc</li>
-            </div>
+        <div id="segundaColuna" class="col-sm-4" data-aos="fade-left" data-aos-duration="500">
+            <h2 id="h2Equipe">PARCERIAS:</h2>
+            <li>PowerFit</li>
+            <li>Proquality</li>
+            <li>Smartfit</li>
+            <li>BigGang</li>
+            <li>WorkAcademy</li>
+            <li>AnabolMusc</li>
         </div>
-    </section>
-    <!--FIM EQUIPE-->
+    </div>
+</div>
+<!--FIM EQUIPE-->
 </body>
 
-<footer data-aos="fade-up">
+<footer data-aos="fade-up" data-aos-duration="200" style="z-index: 1;">
     <!--SOBRE AGT-->
     <div id="principal">
         <div id="subPrincipal" class="container">
             <h2>Sobre o PowerFit:</h2>
-            <p>O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais! <a id="assine" href="#">Assine já e mantenha-se saudável!</a></p>
+            <p>O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais! <a id="assine" href="cadastro.html">Assine já e mantenha-se saudável!</a></p>
         </div>
         <br>
         <div class="container"></div>
@@ -193,6 +193,9 @@
         </div>
     </div>
     <!--FIM SOBRE-->
+    <nav style="position: absolute; width: 100%;" class="navbar navbar-default navbar-static-top sem-margem">
+        <p class="navbar-text">&copy; 2021 Copyright - PowerFit</p>
+    </nav>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -201,6 +204,7 @@
 </script>
 
 <script>
+    // deixar navbar transparente no topo da pagina
     (function() {
         var menu = document.getElementById('menu');
         window.addEventListener('scroll', function() {
@@ -214,6 +218,19 @@
             if (window.scrollY > 0) menu.classList.add('navbar-top1');
         });
     })();
+
+    // ir para cadastro
+    window.onload = function() {
+        document.getElementById("form").addEventListener("submit", login, false);
+    }
+
+    function login(event) {
+        event.preventDefault();
+
+        console.log("go to cadastro", event)
+
+        window.location.href = "cadastro.html"
+    }
 </script>
 
 <style type="text/css">

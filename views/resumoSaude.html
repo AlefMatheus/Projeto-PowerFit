@@ -26,7 +26,7 @@
 <body style="margin-top: 20px;">
 
     <!--NAV BAR-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
         <div class="container-fluid">
             <div class="container">
                 <a style="font-size: 2.5rem;" href="../views/index.html" class="navbar-brand">PowerFit</a>
@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+                        <li><a href="..//views/login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +59,7 @@
 
     <!--BANNER-->
     <div id="banner">
-        <video style=" margin-top: 50px;" id="background" src="../video/saude.mp4" autoplay="true" muted="true" loop="true">
+        <video id="background" src="../video/saude.mp4" autoplay="true" muted="true" loop="true">
 		</video>
         <div id="conteudo">
             <h1 id="content">Saúde - Previa</h1>
@@ -68,17 +68,23 @@
     <!--FIM BANNER-->
 
     <!--CONTEUDO PREVIO-->
- 
-<!--FIM CONTEUDO PREVIO-->
+
+    <!--FIM CONTEUDO PREVIO-->
 
     <!--PQ É IMPORTANTE-->
-    <div class="container" style="margin-top:300px; margin-bottom: 50px;">
+    <div class="container" style="margin-top:290px;">
         <div class="row" id="rowMusculacao">
             <div data-aos="slide-up" id="colunaMusculacao" class="col-sm-6">
                 <h1>Tenha uma vida saudável!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quia doloremque! Aliquid nobis esse aperiam sint odio impedit repudiandae doloremque minus quasi quod! Aliquid consectetur sunt rem, in impedit beatae.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam repellat atque magnam eos, rerum, eum placeat ad quae vel numquam minus sunt! Exercitationem nisi dolore quam sint voluptatum repellat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla et, ullam aliquid esse eum ad, quia sequi vitae animi laboriosam cupiditate quaerat. Iure, ullam laboriosam nam quia itaque magni?</p>
+                <p>- Assim como a saúde física, a saúde mental é um componente que promove a capacidade do indivíduo de viver, trabalhar, gerir a própria vida, enfrentar dificuldades do dia a dia, se relacionar bem consigo e com os outros.</p>
+                <p>- O equilíbrio da saúde física, mental e social é fundamental para garantir não só a saúde, mas também o bem-estar e produtividade de todos. Com a assistência e cuidados adequados, é possível minimizar e até mesmo mitigar o surgimento
+                    de diversas doenças.</p>
+                <p>- O bem-estar físico se refere às condições do nosso corpo e está relacionado à capacidade física, disposição, nutrição e autoestima. Pode ser desenvolvido através da combinação dos benefícios das atividades físicas e hábitos alimentares
+                    saudáveis.
+                </p>
+                <p>- A saúde mental está relacionada ao cognitivo, psicológico e ao emocional. É o equilíbrio entre emoções e sentimentos diante dos desafios, conflitos, mudanças e demais eventos da vida. Diante disso, é fundamental reconhecer seus limites
+                    e buscar ajuda quando necessário.</p>
+                <a id="assine" style="text-decoration: none;" href="cadastro.html">Assine para obter o pacote exclusivo de dicas! :)</a>
             </div>
 
             <div data-aos="fade" data-aos-duration="3000" class="col-sm-6">
@@ -87,6 +93,8 @@
         </div>
     </div>
     <!--FIM PQ É IMPORTANTE-->
+<<<<<<< HEAD
+=======
 
     <footer data-aos="slide-up">
        <!--SOBRE AGT-->
@@ -113,6 +121,58 @@
         AOS.init();
     </script>
 
+>>>>>>> main
 </body>
+
+<footer data-aos="slide-up" style="z-index: 1; margin-top: 15px;">
+    <!--SOBRE AGT-->
+    <div id="principal">
+        <div id="subPrincipal" class="container">
+            <h2>Sobre o PowerFit:</h2>
+            <p>O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais! <a id="assine" href="#">Assine já e mantenha-se saudável!</a></p>
+        </div>
+        <br>
+        <div class="container"></div>
+        <div id="subPrincipal" class="container">
+            <h2>Funcionalidades:</h2>
+            <li>Análise e cáculo de IMC;</li>
+            <li>Gráficos de desempenho;</li>
+            <li>Controle de alimentação e treinos;</li>
+            <li>Gerenciamento de altura e peso.</li>
+        </div>
+    </div>
+    <!--FIM SOBRE-->
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    (function() {
+        var menu = document.getElementById('menu');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY == 0) menu.classList.add('navbar-top');
+            else menu.classList.remove('navbar-top');
+        });
+    })();
+    (function() {
+        var menu = document.getElementById('menu');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) menu.classList.add('navbar-top1');
+        });
+    })();
+</script>
+
+<style type="text/css">
+    .navbar-top {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .navbar-top1 {
+        transition: 0.5s;
+    }
+</style>
 
 </html>
