@@ -47,10 +47,11 @@ video {
     font-family: Comfortaa;
     text-align: center;
     color: white;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #botaoBanner {
+    font-size: 15px;
     padding: 30px;
     margin-bottom: 30px;
     height: 100px;
@@ -63,7 +64,7 @@ video {
 
 #botaoColuna {
     bottom: 0;
-    margin-top: 180px;
+    margin-top: 170px;
 }
 
 #botaoBanner:hover {
@@ -117,7 +118,6 @@ video {
 img#foto,
 img#dicas {
     max-width: 100%;
-    border: 1px solid white;
     margin-top: 10px;
 }
 
@@ -243,8 +243,7 @@ div.row {
 
 #h1encontra {
     color: white;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    border-bottom: 1px solid white;
     padding: 10px;
     width: 60%;
     margin: auto;
@@ -252,8 +251,7 @@ div.row {
 
 #h3encontra {
     color: white;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    border-bottom: 1px solid white;
     margin: auto;
     width: 20%;
     margin-bottom: 30px;
