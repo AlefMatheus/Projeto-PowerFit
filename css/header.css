@@ -2,17 +2,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between ;
-    height: 90px;
-    background-color:	black;
-    padding: 10px 30px; 
-    border: 1px solid rgb(240, 224, 0);
-  }
-  .flex-dashboard header a{
-      text-decoration:none;
-      color:yellow;
-  }
-  .flex-dashboard header a > i{
-      color:yellow;
-  }
- 
+    justify-content: right;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.975);
+    padding: 10px 50px;
+    font-family: Comfortaa;
+    border-bottom: 2px rgb(19, 19, 19) solid;
+}
+
+.flex-dashboard header a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.flex-dashboard header a>i {
+    color: rgb(255, 255, 255);
+}
