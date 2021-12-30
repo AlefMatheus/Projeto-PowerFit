@@ -52,24 +52,28 @@ video {
 
 #botaoBanner {
     font-size: 15px;
+    transition: 0.5s;
     padding: 30px;
     margin-bottom: 30px;
     height: 100px;
     width: 200px;
-    color: white;
-    background-color: rgb(5, 5, 5);
+    color: black;
+    background-color: white;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
+    font-size: large;
+}
+
+#botaoBanner:hover {
+    transition: 0.5s;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    
 }
 
 #botaoColuna {
     bottom: 0;
     margin-top: 170px;
-}
-
-#botaoBanner:hover {
-    transition: 1s;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 #content {
@@ -296,6 +300,7 @@ div.row {
 }
 
 #btsaiba {
+    transition: 0.5s;
     background-color: rgb(255, 255, 255);
     border: none;
     color: rgb(0, 0, 0);
