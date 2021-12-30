@@ -1,223 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/all.css">
-        <link rel="stylesheet"
-            href="../plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
-        <title>Health Track</title>
-    </head>
-    <body>
-        <div class="flex-dashboard">
-            <sidebar>
-                <div class="sidebar-title">
-                    <img src="../img/life.jpg" alt="">
-                    <h2>PowerFit</h2>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Health Track</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <h2>PowerFit</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-weight"></i>
+                        <a href="#"> Gerenciar Peso e Altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="#"> Gerenciar Pressão Arterial</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-skating"></i>
+                        <a href="#"> Gerenciar Atividades Físicas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="#"> Gerenciar Alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <a href="#"> Calcular IMC</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="#"> <i class="fas fa-user"></i> PERFIL</a>
+
+                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+            </header>
+
+            <div class="main-content">
+                <div class="grafico">
+                    <canvas id="myChart" width="160" height="100"></canvas>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <i class="fas fa-home"></i>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-user"></i>
-                            <a href="#">Perfil</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-weight"></i>
-                            <a href="#"> Gerenciar Peso e Altura</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-heartbeat"></i>
-                            <a href="#"> Gerenciar Pressão Arterial</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-skating"></i>
-                            <a href="#"> Gerenciar Atividades Físicas</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-utensils"></i>
-                            <a href="#"> Gerenciar Alimentos</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-calculator"></i>
-                            <a href="#"> Calcular IMC</a>
-                        </li>
-                    </ul>
-                </div>
-            </sidebar>
-            <main>
-                <header>
-                    <a href="#"> <i class="fas fa-home"></i>Dashboard</a>
+            </div>
 
-                    <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i>logout</a>
-                </header>
-                <div class="main-content">
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        </main>
+    </div>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/fontawesome/js/all.min.js"></script>
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+    <script>
+        const ctx = document.getElementById('myChart').getContext("2d")
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400)
+        gradient.addColorStop(0, '#ffa600')
+        gradient.addColorStop(1, '#e60000')
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        const labels = [
+            'Jan',
+            'Fev',
+            'Mar',
+            'Abr',
+            'Mai',
+            'Jun',
+            'Jul',
+            'Ago',
+            'Set',
+            'Out',
+            'Nov',
+            'Dez'
+        ]
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        const data = {
+            labels,
+            datasets: [{
+                data: [60, 65, 59, 64, 70, 75, 69, 78, 81, 85, 81, 90],
+                label: "SUA EVOLUÇÃO",
+                fill: true,
+                backgroundColor: gradient,
+                borderColor: 'transparent'
+            }]
+        }
+        Chart.defaults.font.size = 16;
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'DESENVOLVIMENTO CORPORAL'
+                    },
+                },
+                responsive: true,
+                radius: 4,
+                hoverRadius: 8,
+            }
+        });
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
+        const myChart = new Chart(ctx, config)
+    </script>
+</body>
 
-                        </p>
-                    </div>
-                    <div class="panel">
-                        <p>Lorem Ipsum é simplesmente um texto fictício da
-                            indústria de impressão e composição. Lorem Ipsum tem
-                            sido o texto fictício padrão da indústria desde os
-                            anos 1500, quando um impressor desconhecido pegou
-                            uma galé do tipo e embaralhou para fazer um livro de
-                            amostra de tipos. Ele sobreviveu não apenas cinco
-                            séculos, mas também ao salto para a composição
-                            eletrônica, permanecendo essencialmente inalterado.
-                            Foi popularizado na década de 1960 com o lançamento
-                            de folhas de Letraset contendo passagens de Lorem
-                            Ipsum e, mais recentemente, com software de
-                            editoração eletrônica como Aldus PageMaker incluindo
-                            versões de Lorem Ipsum.
-
-                        </p>
-                    </div>
-
-                </div>
-
-            </main>
-        </div>
-        <script
-            src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="plugins/fontawesome/js/all.min.js"></script>
-    </body>
 </html>

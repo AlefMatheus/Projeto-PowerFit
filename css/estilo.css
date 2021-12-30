@@ -213,6 +213,36 @@ div.row {
 
 /* ENCONTRA AQUI */
 
+#encontra2 {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.h1encontra {
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cartazImc {
+    height: 450px;
+    width: 100%;
+}
+
+.flex {
+    width: 80%;
+    margin: auto;
+}
+
 #linhaEncontra {
     display: flex;
     align-items: center;
@@ -243,7 +273,8 @@ div.row {
 
 #h1encontra {
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
     padding: 10px;
     width: 60%;
     margin: auto;
@@ -251,7 +282,8 @@ div.row {
 
 #h3encontra {
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
     margin: auto;
     width: 20%;
     margin-bottom: 30px;
@@ -441,3 +473,11 @@ div#subPrincipal {
         transition: 0.5s;
     }
 }
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
