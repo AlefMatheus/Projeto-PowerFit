@@ -53,12 +53,6 @@
                 <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
             </header>
 
-            <div class="main-content">
-                <div class="grafico">
-                    <canvas id="myChart" width="160" height="100"></canvas>
-                </div>
-            </div>
-
         </main>
     </div>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -66,58 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        const ctx = document.getElementById('myChart').getContext("2d")
-
-        const gradient = ctx.createLinearGradient(0, 0, 0, 400)
-        gradient.addColorStop(0, '#ffa600')
-        gradient.addColorStop(1, '#e60000')
-
-        const labels = [
-            'Jan',
-            'Fev',
-            'Mar',
-            'Abr',
-            'Mai',
-            'Jun',
-            'Jul',
-            'Ago',
-            'Set',
-            'Out',
-            'Nov',
-            'Dez'
-        ]
-
-        const data = {
-            labels,
-            datasets: [{
-                data: [60, 65, 59, 64, 70, 75, 69, 78, 81, 85, 81, 90],
-                label: "SUA EVOLUÇÃO",
-                fill: true,
-                backgroundColor: gradient,
-                borderColor: 'transparent'
-            }]
-        }
-        Chart.defaults.font.size = 16;
-
-        var chart = new Chart(ctx, {
-            type: 'line',
-            data: data,
-            options: {
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'DESENVOLVIMENTO CORPORAL'
-                    },
-                },
-                responsive: true,
-                radius: 4,
-                hoverRadius: 8,
-            }
-        });
-
-        const myChart = new Chart(ctx, config)
-    </script>
 </body>
 
 </html>
