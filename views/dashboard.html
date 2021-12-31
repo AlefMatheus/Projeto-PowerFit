@@ -15,47 +15,72 @@
     <div class="flex-dashboard">
         <sidebar>
             <div class="sidebar-title">
-                <h2>PowerFit</h2>
+                <a href="..//views/index.html">
+                    <h2>PowerFit</h2>
+                </a>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <i class="fas fa-home"></i>
-                        <a href="#">Dashboard</a>
+                        <a href="">
+                            <i class="fas fa-home"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-weight"></i>
-                        <a href="#"> Gerenciar Peso e Altura</a>
+                        <a href="#">
+                            <i class="fas fa-weight"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-heartbeat"></i>
-                        <a href="#"> Gerenciar Pressão Arterial</a>
+                        <a href="pressaoArterial.html">
+                            <i class="fas fa-heartbeat"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-skating"></i>
-                        <a href="#"> Gerenciar Atividades Físicas</a>
+                        <a href=""><i class="fas fa-skating"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-utensils"></i>
-                        <a href="#"> Gerenciar Alimentos</a>
+                        <a href="">
+                            <i class="fas fa-utensils"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-calculator"></i>
-                        <a href="#"> Calcular IMC</a>
+                        <a href="">
+                            <i class="fas fa-calculator"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </sidebar>
         <main>
             <header>
-                <a href="#"> <i class="fas fa-user"></i> PERFIL</a>
+                <a href="#"> <i class="fas fa-user"></i></a>
 
-                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i></a>
             </header>
 
             <div class="main-content">
-                <div class="grafico">
-                    <canvas id="myChart" width="160" height="100"></canvas>
+                <div class="row">
+                    <div class="grafico col-sm-3">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="grafico col-sm-3">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="grafico col-sm-3">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 grafico">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="col-sm-3 grafico">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="col-sm-3 grafico">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
 
@@ -63,62 +88,6 @@
     </div>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/fontawesome/js/all.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        const ctx = document.getElementById('myChart').getContext("2d")
-
-        const gradient = ctx.createLinearGradient(0, 0, 0, 400)
-        gradient.addColorStop(0, '#ffa600')
-        gradient.addColorStop(1, '#e60000')
-
-        const labels = [
-            'Jan',
-            'Fev',
-            'Mar',
-            'Abr',
-            'Mai',
-            'Jun',
-            'Jul',
-            'Ago',
-            'Set',
-            'Out',
-            'Nov',
-            'Dez'
-        ]
-
-        const data = {
-            labels,
-            datasets: [{
-                data: [60, 65, 59, 64, 70, 75, 69, 78, 81, 85, 81, 90],
-                label: "SUA EVOLUÇÃO",
-                fill: true,
-                backgroundColor: gradient,
-                borderColor: 'transparent'
-            }]
-        }
-        Chart.defaults.font.size = 16;
-
-        var chart = new Chart(ctx, {
-            type: 'line',
-            data: data,
-            options: {
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'DESENVOLVIMENTO CORPORAL'
-                    },
-                },
-                responsive: true,
-                radius: 4,
-                hoverRadius: 8,
-            }
-        });
-
-        const myChart = new Chart(ctx, config)
-    </script>
 </body>
 
 </html>

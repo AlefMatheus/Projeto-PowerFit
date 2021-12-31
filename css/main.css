@@ -1,15 +1,12 @@
             body {
-                background-image: url('https://i.ibb.co/wR1VWWd/pngegg.png');
-                background-repeat: no-repeat;
-                background-size: cover;
                 height: 100%;
             }
             
             main {
                 display: block;
                 height: 100%;
-                background-color: rgba(5, 5, 5, 0.541);
-                width: calc(100% - 300px);
+                background-color: rgb(26, 26, 26);
+                width: calc(100% - 150px);
             }
             
             main .main-content {
@@ -17,6 +14,7 @@
                 width: 100%;
                 height: calc(100% - 70px);
                 overflow-y: auto;
+                display: inline-block;
             }
             
             .main-content::-webkit-scrollbar-track {
@@ -36,7 +34,6 @@
             .grafico {
                 background-color: rgb(12, 12, 12);
                 padding: 20px;
-                width: 50%;
-                border: 3px solid;
-                border-image: linear-gradient(45deg, #070707 25%, rgb(8, 8, 8) 50%, rgb(10, 10, 10))1;
+                margin: 10px;
+                margin-bottom: 20px;
             }

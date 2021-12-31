@@ -3,11 +3,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.975);
-    padding: 10px 50px;
+    height: 60px;
+    background-color: rgb(15, 15, 15);
+    padding: 25px;
+    padding-right: 30px;
     font-family: Comfortaa;
-    border-bottom: 2px rgb(19, 19, 19) solid;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+    font-size: 0.9rem;
 }
 
 .flex-dashboard header a {
@@ -18,4 +20,9 @@
 
 .flex-dashboard header a>i {
     color: rgb(255, 255, 255);
+}
+
+.flex-dashboard header a>i:hover {
+    color: rgb(255, 94, 0);
+    transition: 0.5s;
 }
