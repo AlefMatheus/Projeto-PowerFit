@@ -23,27 +23,35 @@
 
 <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
     body,
     html {
         height: 100%;
-        font-family: Nunito;
+        font-family: Comfortaa;
     }
     
-    body {
-        background-image: url('https://i.ibb.co/8Y6Q3W6/Design-sem-nome-4.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    .login {
+        font-size: 0.9rem;
+    }
+    
+    .login-form {
+        width: 100%;
+    }
+    
+    .login-form-wrapper {
+        height: 95%;
     }
 </style>
 
 <body>
     <div class="login">
         <div class="login-form">
-            <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
-                <h1 id="textH1" class="text-left">PowerFit - Cadastro</h1>
-                <p style="color: rgb(255, 255, 255);">Junte-se a nós :)</p>
-            </div>
             <div class="login-form-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
+                    <h3 id="textH1" class="text-left">PowerFit - Cadastro</h3>
+                    <p style="color: rgb(0, 0, 0);">Junte-se a nós :)</p>
+                </div>
                 <form id="form">
                     <div class="mb-3">
                         <label for="inputNome" class="form-label">Nome:</label>
