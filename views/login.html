@@ -23,27 +23,25 @@
 
 <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
     body,
     html {
         height: 100%;
-        font-family: Nunito;
-    }
-    
-    body {
-        background-image: url('https://i.ibb.co/8Y6Q3W6/Design-sem-nome-4.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 100%;
+        font-family: Comfortaa;
+        font-size: 0.95rem;
     }
 </style>
 
 <body>
     <div class="login">
         <div class="login-form">
-            <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
-                <h1 id="textH1" class="text-left">PowerFit - Login</h1>
-                <p style="color: rgb(255, 255, 255);">Junte-se a nós :)</p>
-            </div>
             <div class="login-form-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
+                    <h1 id="textH1" class="text-left">PowerFit - Login</h1>
+                    <p style="color: rgb(0, 0, 0);">Junte-se a nós :)</p>
+                </div>
                 <form id="form">
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Email:</label>
@@ -58,8 +56,13 @@
                         <label class="form-check-label" for="exampleCheck1">Mostrar Senha</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Entrar</button>
-                    <p style="margin-top: 15px; font-size: 16px;">Não tem uma conta? <a id="cadastro" href="escolhaCadastro.html">Cadastre-se agora</a></p>
+                    <p style="margin-top: 15px; font-size: 16px;">Não tem uma conta? <a id="cadastro" href="cadastro.html">Cadastre-se agora</a></p>
                 </form>
+            </div>
+        </div>
+        <div class="div-banner">
+            <div data-aos="fade-left" data-aos-duration="1000" class="cartaz">
+                <img id="cartaz" src="https://i.ibb.co/WVZywTW/Design-sem-nome-15.png">
             </div>
         </div>
     </div>
