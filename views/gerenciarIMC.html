@@ -49,17 +49,28 @@
         <main>
             <header>
                 <a href="#"> <i class="fas fa-user"></i> PERFIL</a>
-
                 <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
             </header>
 
-        
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>imc</h2>
+                </div>
+                <div class="panel-row">
+                    <button class="panel panel-50" a-view="cadastrarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">Cadastrar peso</button>
+                    <button class="panel panel-50" a-view="visualizarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">Visualizar peso</button>
+                </div>
+                <div class="content" id="ajax-content">
+
+                </div>             
+            </div>
 
         </main>
     </div>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/fontawesome/js/all.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/ajax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
