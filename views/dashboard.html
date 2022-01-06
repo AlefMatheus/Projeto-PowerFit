@@ -60,25 +60,56 @@
 
             <div class="main-content">
                 <div class="row">
-                    <div class="grafico col-sm-3">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <div class="grafico col-sm-3">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <div class="grafico col-sm-3">
-                        <canvas id="myChart"></canvas>
+                    <h3>DASHBOARD</h3>
+                    <div class="grafico col-sm-12">
+                        <canvas id="myChart" width="110" height="40"></canvas>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3 grafico">
-                        <canvas id="myChart"></canvas>
+                <div class="row segundaLinha">
+                    <div class="grafico2 col-sm-3">
+                        <i class="fas fa-dumbbell peso"></i>
+                        <h3>PESO ATUAL</h3>
+                        <h3 id="kg">90KG</h3>
+                        <br>
+                        <p id="seta"> <i class="fas fa-chevron-up seta"></i> +5KG</p>
                     </div>
-                    <div class="col-sm-3 grafico">
-                        <canvas id="myChart"></canvas>
+                    <div class="grafico2 col-sm-3">
+                        <i class="fas fa-calculator calculadora"></i>
+                        <h3>IMC</h3>
+                        <h3 id="kg">24,9</h3>
+                        <br>
+                        <p id="check"> <i class="fas fa-check check"></i> NORMAL</p>
                     </div>
-                    <div class="col-sm-3 grafico">
-                        <canvas id="myChart"></canvas>
+                    <div class="grafico2 col-sm-3">
+                        <i class="fas fa-heartbeat coracao"></i>
+                        <h3>PRESSÃO ARTERIAL</h3>
+                        <h3 id="kg">140/90MMHG</h3>
+                        <br>
+                        <p id="pressao"> <i class="fas fa-exclamation-triangle pressao"></i> ALTA</p>
+                    </div>
+                </div>
+
+                <div class="row segundaLinha">
+                    <div class="col-sm-3 grafico2">
+                        <i class="fas fa-running atividade"></i>
+                        <h3>ATIVIDADE FÍSICA</h3>
+                        <h3 id="kg">CORRIDA</h3>
+                        <br>
+                        <p id="calendario"><i class="fas fa-calendar-alt calendario"></i> 15/01/2022</p>
+                    </div>
+                    <div class="col-sm-3 grafico2">
+                        <i class="fas fa-glass-whiskey agua"></i>
+                        <h3>HIDRATAÇÃO</h3>
+                        <h3 id="kg">HOJE: 2L</h3>
+                        <br>
+                        <p id="beber"><i class="fas fa-plus beber"></i> 3L</p>
+                    </div>
+                    <div class="col-sm-3 grafico2">
+                        <i class="fas fa-apple-alt maca"></i>
+                        <h3>ALIMENTAÇÃO</h3>
+                        <h3 id="kg">HOJE: PROTEÍNAS</h3>
+                        <br>
+                        <p id="beber"><i class="fas fa-plus beber"></i> 160g</p>
                     </div>
                 </div>
             </div>
@@ -86,6 +117,63 @@
     </div>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/fontawesome/js/all.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext("2d")
+
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400)
+        gradient.addColorStop(0, '#ffa600')
+        gradient.addColorStop(1, '#e60000')
+
+        const labels = [
+            'Jan',
+            'Fev',
+            'Mar',
+            'Abr',
+            'Mai',
+            'Jun',
+            'Jul',
+            'Ago',
+            'Set',
+            'Out',
+            'Nov',
+            'Dez'
+        ]
+
+        const data = {
+            labels,
+            datasets: [{
+                data: [60, 65, 59, 64, 70, 75, 69, 78, 81, 85, 81, 90],
+                label: "SUA EVOLUÇÃO",
+                fill: true,
+                backgroundColor: gradient,
+                borderColor: 'transparent'
+            }]
+        }
+        Chart.defaults.font.size = 16;
+
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'DESENVOLVIMENTO CORPORAL',
+                    },
+                },
+                responsive: true,
+                radius: 4,
+                hoverRadius: 8,
+            }
+        });
+
+        const myChart = new Chart(ctx, config)
+    </script>
 </body>
+
 
 </html>
