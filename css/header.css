@@ -1,4 +1,4 @@
-.flex-dashboard header{
+.flex-dashboard header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,12 +16,6 @@
     color: rgb(255, 255, 255);
 }
 
-.flex-dashboard header a:hover {
-    color: #bdbdbd
-}
-
 .flex-dashboard header a>i {
     color: rgb(255, 255, 255);
 }
-
-
