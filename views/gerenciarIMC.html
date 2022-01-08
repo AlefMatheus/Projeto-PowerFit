@@ -39,7 +39,7 @@
                         <i class="fas fa-utensils"></i>
                         <a href="gerenciarAlimentos.html"> Gerenciar Alimentos</a>
                     </li>
-                    <li>
+                    <li class="selected">
                         <i class="fas fa-calculator"></i>
                         <a href="gerenciarIMC.html"> Calcular IMC</a>
                     </li>
@@ -48,19 +48,36 @@
         </sidebar>
         <main>
             <header>
-                <a href="#"> <i class="fas fa-user"></i> PERFIL</a>
-
+                <a href="perfil.html"> <i class="fas fa-user"></i> PERFIL</a>
                 <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
             </header>
+            <div class="main-content">
+                <div class="imc-parent">
+                    <div class="imc">
+                        <h2>Seu imc é <span>19,5</span> - <span>NORMAL</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="ajax-content">
 
-        
-
-        </main>
+            </div>
     </div>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/fontawesome/js/all.min.js"></script>
+
+    </main>
+    </div>
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/jquery/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="../plugins/jquery/jquery-validation-1.19.3/dist/additional-methods.min.js"></script>
+    <script src="../plugins/jquery/jquery-validation-1.19.3/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script src="../plugins/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="../plugins/jquery/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
