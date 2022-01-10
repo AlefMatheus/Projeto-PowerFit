@@ -17,7 +17,7 @@
             
             .login-form {
                 height: 100%;
-                width: 50%;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -57,9 +57,11 @@
                 width: 400px;
                 height: auto;
                 max-width: 400px;
-                padding: 20px;
+                padding: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
                 background-color: rgba(255, 255, 255, 0.637);
-                padding-bottom: 20px;
+                padding-bottom: 10px;
                 padding-top: 30px;
                 color: rgb(0, 0, 0);
                 border-radius: 10px;

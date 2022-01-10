@@ -1,29 +1,34 @@
+
 $(function () {
 
-    $('#activity-duration').mask("00h:00")
-    $('#activity-date').mask("00/00/0000")
-
-    $("#atividade-form").submit(function (e) {
+    $("#form").submit(function (e) {
         e.preventDefault();
     }).validate({
         rules: {
             nome: {
                 required: true,
             },
-            tempo: {
+            email: {
+                required: true,
+                email: true
+            },
+            usuario: {
                 required: true,
             },
-            data: {
+            senha: {
                 required: true,
-                date: true
+            },
+            confirmarSenha: {
+                required: true,
+                equalTo: "#inputSenha"
             },
         },
-        submitHandler: function (form) {
+        /*submitHandler: function (form) {
             Swal.fire({
                 heightAuto: false,
                 position: 'center',
                 icon: 'success',
-                title: 'Registro realizado com sucesso!',
+                title: 'Seu cadastro foi realizado com sucesso!',
                 showConfirmButton: false,
                 timer: 1500
             }).then(() => {
@@ -31,6 +36,6 @@ $(function () {
                 $('#activity-duration').val('')
                 $('#activity-date').val('')
             })
-        }
+        }*/
     });
 })

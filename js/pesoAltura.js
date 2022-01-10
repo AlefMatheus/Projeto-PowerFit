@@ -16,6 +16,7 @@ $(function () {
             submitHandler: function (form) {
                 // $(form).ajaxSubmit();
                 Swal.fire({
+                    heightAuto: false,
                     position: 'center',
                     icon: 'success',
                     title: 'Registro realizado com sucesso!',

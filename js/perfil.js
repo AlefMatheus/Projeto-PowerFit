@@ -58,6 +58,7 @@ $(function () {
         submitHandler: function (form) {
             // $(form).ajaxSubmit();
             Swal.fire({
+                heightAuto: false,
                 title: 'Você quer mesmo salvar essas mudanças?',
                 showCancelButton: true,
                 confirmButtonText: 'Salvar',
