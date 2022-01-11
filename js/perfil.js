@@ -59,18 +59,12 @@ $(function () {
             // $(form).ajaxSubmit();
             Swal.fire({
                 heightAuto: false,
-                title: 'Você quer mesmo salvar essas mudanças?',
-                showCancelButton: true,
-                confirmButtonText: 'Salvar',
-                cancelButtonText: `Cancelar`,
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    Swal.fire('Salvo com sucesso!', '', 'success')
-                } else if (result.isDenied) {
-                    Swal.fire('As mudanças não foram salvas', '', 'info')
-                }
-            })
+                position: 'center',
+                icon: 'success',
+                title: 'Registro realizado com sucesso!',
+                showConfirmButton: false,
+                timer: 1500
+              })
         }
     });
 })
