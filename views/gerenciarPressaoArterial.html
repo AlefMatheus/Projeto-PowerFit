@@ -19,30 +19,23 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>
-                        <i class="fas fa-home"></i>
-                        <a href="dashboard.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-weight"></i>
-                        <a href="gerenciarPesoAltura.html"> Gerenciar Peso e Altura</a>
-                    </li>
                     <li class="selected">
-
-                        <i class="fas fa-heartbeat"></i>
-                        <a href="gerenciarPressaoArterial.html"> Gerenciar Pressão Arterial</a>
+                        <a id="dashPanel" href="dashboard.html"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-skating"></i>
-                        <a href="gerenciarAtividadeFisica.html"> Gerenciar Atividades Físicas</a>
+                        <a href="gerenciarPesoAltura.html"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-utensils"></i>
-                        <a href="gerenciarAlimentos.html"> Gerenciar Alimentos</a>
+                        <a href="gerenciarPressaoArterial.html"><i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-calculator"></i>
-                        <a href="gerenciarIMC.html"> Calcular IMC</a>
+                        <a href="gerenciarAtividadeFisica.html"><i class="fas fa-skating"></i></a>
+                    </li>
+                    <li>
+                        <a href="gerenciarAlimentos.html"><i class="fas fa-utensils"></i></a>
+                    </li>
+                    <li>
+                        <a href="gerenciarIMC.html"><i class="fas fa-calculator"></i></a>
                     </li>
                 </ul>
             </div>
@@ -50,9 +43,9 @@
         <main>
             <header>
 
-                
-                <a href="perfil.html"> <i class="fas fa-user"></i> PERFIL</a>
-                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+
+                <a href="perfil.html"> <i class="fas fa-user"></i></a>
+                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i></a>
             </header>
 
             <div class="main-content">
@@ -60,10 +53,8 @@
                     <h2>Gerenciar Pressao Arterial</h2>
                 </div>
                 <div class="panel-row">
-                    <button class="panel panel-50" a-script="pressao" a-view="cadastrarPressao" onclick="fetchContent(this)"
-                        a-folder="pressao"> <i class="fas fa-plus"></i> Cadastrar Pressão</button>
-                    <button class="panel panel-50" a-script="pressao" a-view="visualizarPressao" onclick="fetchContent(this)"
-                        a-folder="pressao"> <i class="fas fa-table"></i> Visualizar Pressão</button>
+                    <button class="panel panel-50" a-script="pressao" a-view="cadastrarPressao" onclick="fetchContent(this)" a-folder="pressao"> <i class="fas fa-plus"></i> Cadastrar Pressão</button>
+                    <button class="panel panel-50" a-script="pressao" a-view="visualizarPressao" onclick="fetchContent(this)" a-folder="pressao"> <i class="fas fa-table"></i> Visualizar Pressão</button>
                 </div>
                 <div class="content" id="ajax-content">
 
@@ -83,9 +74,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/ajax.js"></script>
     <script src="../js/pressao.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
-        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

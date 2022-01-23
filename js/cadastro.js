@@ -1,6 +1,6 @@
-$(function () {
+$(function() {
 
-    $("#form").submit(function (e) {
+    $("#form").submit(function(e) {
         e.preventDefault();
     }).validate({
         rules: {
@@ -22,7 +22,7 @@ $(function () {
                 equalTo: "#inputSenha"
             },
         },
-        submitHandler: function (form) {
+        submitHandler: function(form) {
             Swal.fire({
                 heightAuto: false,
                 position: 'center',

@@ -20,42 +20,39 @@
             <div class="menu">
                 <ul>
                     <li class="selected">
-                        <i class="fas fa-home"></i>
-                        <a id="dashPanel" href="dashboard.html">DASHBOARD</a>
+                        <a id="dashPanel" href="dashboard.html"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-weight"></i>
-                        <a href="gerenciarPesoAltura.html"> Gerenciar Peso e Altura</a>
+                        <a href="gerenciarPesoAltura.html"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-heartbeat"></i>
-                        <a href="gerenciarPressaoArterial.html"> Gerenciar Pressão Arterial</a>
+                        <a href="gerenciarPressaoArterial.html"><i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-skating"></i>
-                        <a href="gerenciarAtividadeFisica.html"> Gerenciar Atividades Físicas</a>
+                        <a href="gerenciarAtividadeFisica.html"><i class="fas fa-skating"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-utensils"></i>
-                        <a href="gerenciarAlimentos.html"> Gerenciar Alimentos</a>
+                        <a href="gerenciarAlimentos.html"><i class="fas fa-utensils"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-calculator"></i>
-                        <a href="gerenciarIMC.html"> Calcular IMC</a>
+                        <a href="gerenciarIMC.html"><i class="fas fa-calculator"></i></a>
                     </li>
                 </ul>
             </div>
         </sidebar>
         <main>
             <header>
-                <a href="perfil.html"> <i class="fas fa-user"></i> PERFIL</a>
-                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
+                <a href="perfil.html"> <i class="fas fa-user"></i></a>
+                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i></a>
             </header>
             <div class="main-content">
                 <div class="main-content-title">
                     <h2>DASHBOARD</h2>
                 </div>
-                <div class="dashboard-content">
+                <div class="grafico col-sm-12">
+                    <canvas id="myChart" width="110" height="40"></canvas>
+                </div>
+                <div class="dashboard-content col-sm-12">
                     <div class="dashboard-flex-parent">
                         <div class="dashboard-box">
                             <div class="dashboard-box-wrapper">
@@ -65,8 +62,7 @@
                                 <div class="value">80kg</div>
                                 <div class="type">PESO</div>
                                 <div class="box-value-percentual box-value-weight">
-                                    <i class="fas fa-chevron-up"></i>
-                                    10%
+                                    <i class="fas fa-chevron-up"></i> 10%
                                 </div>
                             </div>
                         </div>
@@ -78,8 +74,7 @@
                                 <div class="value">23MMHC</div>
                                 <div class="type">PRESSÃO ARTERIAL</div>
                                 <div class="box-value-percentual box-value-pressure">
-                                    <i class="fas fa-chevron-up"></i>
-                                    10%
+                                    <i class="fas fa-chevron-up"></i> 10%
                                 </div>
                             </div>
                         </div>
@@ -110,9 +105,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="grafico">
-                    <canvas id="myChart" width="160" height="100"></canvas>
-                </div>
             </div>
         </main>
     </div>
@@ -127,9 +119,7 @@
     <script src="../js/ajax.js"></script>
     <script src="../js/dashboard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
-        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         const ctx = document.getElementById('myChart').getContext("2d")
@@ -183,6 +173,6 @@
 
         const myChart = new Chart(ctx, config)
     </script>
- </body>
+</body>
 
 </html>
