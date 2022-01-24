@@ -1,4 +1,4 @@
-$(function () {
+/**$(function () {
 
     $("#form-pressure").submit(function (e) {
         e.preventDefault();
@@ -20,4 +20,4 @@ $(function () {
             })
         }
     });
-})
+})**/

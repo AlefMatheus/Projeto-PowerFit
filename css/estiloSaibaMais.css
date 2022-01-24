@@ -25,27 +25,3 @@ p {
     font-family: Outfit;
     font-size: 1.7rem;
 }
-.altura-col{
-
-   height:460px;    
-   overflow: hidden; 
-}
-
-.video-contanier{
-    overflow:hidden;
-    display:block;
-    height: 460px;
-
-
-}
-#videobjump{
-    margin-top: -320px;
-}
-#videohclimb{
-    margin-top:-200px;
-}
-#videocordasimul{
-    margin-top: -150px;
-    
-}
-

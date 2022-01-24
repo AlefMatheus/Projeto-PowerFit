@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     
     $("#form-food").submit(function (e) {
         e.preventDefault();
@@ -23,4 +23,4 @@ $(function () {
                   })
             }
     });
-})
+})*/
