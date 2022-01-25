@@ -117,7 +117,6 @@ h3.text-center {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 10px;
 }
 
 #btsaiba {
@@ -177,7 +176,6 @@ h3.text-center {
 
 #imagemDicas {
     margin-top: 30px;
-    
 }
 
 #imagemDicas:hover {
@@ -196,6 +194,7 @@ h3.text-center {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #imagem {
@@ -245,7 +244,7 @@ div#subPrincipal {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #f9dc00;
+    color: #f96400;
     transition: 0.5s;
 }
 
@@ -259,15 +258,15 @@ div#subPrincipal {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #f9dc00;
+    color: #f96400;
     transition: 0.5s;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #f9dc00;
-    background-color: #f9dc00;
+    color: #f96400;
+    background-color: #f96400;
     transition: 0.5s;
 }
 
@@ -275,7 +274,7 @@ div#subPrincipal {
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #000000;
-    background-color: #f9dc00;
+    background-color: #f96400;
     transition: 0.5s;
 }
 
@@ -285,7 +284,7 @@ div#subPrincipal {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #f9bf00;
+    background-color: #f96400;
     transition: 0.5s;
 }
 
@@ -303,7 +302,7 @@ div#subPrincipal {
 }
 
 .navbar-default .navbar-link:hover {
-    color: #f9dc00;
+    color: #f96400;
     transition: 0.5s;
 }
 
@@ -313,14 +312,98 @@ div#subPrincipal {
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #f9dc00;
+        color: #f96400;
         transition: 0.5s;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
         color: #000000;
-        background-color: #f9dc00;
+        background-color: #f96400;
         transition: 0.5s;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    #content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    h4 {
+        font-size: 1.3rem;
+        margin: 20px;
+    }
+    #textTitulos {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    h3#subTitulo {
+        font-size: 1.8rem;
+    }
+    div#img {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-rounded {
+        width: 70%;
+    }
+    #textTitulos2 {
+        font-size: 2.5rem;
+    }
+    #subTitulo2 {
+        font-size: 1.7rem;
+    }
+    #h3Mod {
+        font-size: 1.9rem;
+    }
+    #imagemDicas {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #imgBan {
+        margin: auto;
+    }
+    #acss-dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 450px;
+        margin: auto;
+    }
+    #contato {
+        font-size: 1.5rem;
+    }
+    #pagina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-inner {
+        margin: auto;
+    }
+    #carousel {
+        margin-left: 5px;
+    }
+    #textFooter {
+        font-size: 1.3rem;
+    }
+    #h2Foot {
+        font-size: 1.7rem;
+    }
+    #liFoot {
+        font-size: 1.3rem;
     }
 }

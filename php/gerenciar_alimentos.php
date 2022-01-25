@@ -17,36 +17,29 @@ session_start();
 
 <body>
     <div class="flex-dashboard">
-        <sidebar>
+    <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li>
-                        <i class="fas fa-home"></i>
-                        <a href="dashboard.php">Dashboard</a>
+                    <li >
+                        <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-weight"></i>
-                        <a href="gerenciar_peso.php"> Gerenciar Peso e Altura</a>
+                        <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-heartbeat"></i>
-                        <a href="gerenciar_pressao_arterial.php"> Gerenciar Pressão Arterial</a>
+                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-skating"></i>
-                        <a href="gerenciar_atividade_fisica.php"> Gerenciar Atividades Físicas</a>
+                        <a href="gerenciar_atividade_fisica.php"><i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li class="selected">
-
-                        <i class="fas fa-utensils"></i>
-                        <a href="gerenciar_alimentos.php"> Gerenciar Alimentos</a>
+                        <a href="gerenciar_alimentos.php"><i class="fas fa-utensils"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-calculator"></i>
-                        <a href="gerenciar_imc.php"> Calcular IMC</a>
+                        <a href="gerenciar_imc.php"><i class="fas fa-calculator"></i></a>
                     </li>
                 </ul>
             </div>
