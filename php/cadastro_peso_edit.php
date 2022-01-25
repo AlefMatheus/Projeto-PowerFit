@@ -97,10 +97,7 @@ $linha = mysqli_fetch_assoc($dados);
     <script src="../plugins/jquery/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/ajax.js"></script>
-    <script src="../js/
-    
-    
-    Altura.js"></script>
+    <script src="../js/pesoAltura.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
         integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
