@@ -25,7 +25,7 @@ include('conexao.php');
       $atividade = $linha['atividade'];
       $duracao = $linha['duracao_atividade'];
       $data_atividade = $linha['data_atividade'];
-      $data_atividade = date('d/m/Y', strtotime(str_replace('/','-',$data_atividade)));
+      $data_atividade = date('d/m/Y', strtotime(str_replace('-','/',$linha['data_atividade'])));
     echo
       "<tr>
       <td scope='row'>$data_atividade</td>

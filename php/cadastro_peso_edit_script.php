@@ -11,6 +11,9 @@ $sql = "UPDATE peso_usuario  set peso = '$peso', altura = '$altura', data_peso =
 
 if($conexao->query($sql) === true){
     $_SESSION['status_alteracao'] = true;
+    $_SESSION['data_peso'] = $data_peso;
+    $_SESSION['peso'] = $peso.' kg';
+    $_SESSION['altura'] = $altura;
     header('location: gerenciar_peso.php');
     exit();
 } else {
