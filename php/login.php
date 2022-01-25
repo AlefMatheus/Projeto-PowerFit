@@ -14,7 +14,7 @@ $result = mysqli_query($conexao, $query);
 $row = mysqli_num_rows($result);   
 $dados = mysqli_fetch_array($result);
 
-$dados['nascimento'] = date('d/m/Y', strtotime(str_replace('-','/',$dados['nascimento'])));
+    $dados['nascimento'] = date('d/m/Y', strtotime(str_replace('-','/',$dados['nascimento'])));
 $dados['data_cadastro'] = date('d/m/Y', strtotime(str_replace('-','/',$dados['data_cadastro'])));
  
 if ($row == 1){

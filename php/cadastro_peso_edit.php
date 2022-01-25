@@ -29,35 +29,29 @@ $linha = mysqli_fetch_assoc($dados);
 
 <body>
     <div class="flex-dashboard">
-        <sidebar>
+    <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
+                    <li >
+                        <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
+                    </li>
                     <li>
-                        <i class="fas fa-home"></i>
-                        <a href="dashboard.php">Dashboard</a>
+                        <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
+                    </li>
+                    <li>
+                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
+                    </li>
+                    <li>
+                        <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
                     </li>
                     <li class="selected">
-                        <i class="fas fa-weight"></i>
-                        <a href="gerenciar_peso.php"> Gerenciar Peso e Altura</a>
+                        <a href="gerenciar_alimentos.php"><i class="fas fa-utensils"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-heartbeat"></i>
-                        <a href="gerenciar_pressao_arterial.php"> Gerenciar Pressão Arterial</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-skating"></i>
-                        <a href="gerenciar_atividade_fisica.php"> Gerenciar Atividades Físicas</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-utensils"></i>
-                        <a href="gerenciar_alimentos.php"> Gerenciar Alimentos</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-calculator"></i>
-                        <a href="gerenciar_imc.php"> Calcular IMC</a>
+                        <a href="gerenciar_imc.php"><i class="fas fa-calculator"></i></a>
                     </li>
                 </ul>
             </div>
@@ -103,10 +97,7 @@ $linha = mysqli_fetch_assoc($dados);
     <script src="../plugins/jquery/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/ajax.js"></script>
-    <script src="../js/
-    
-    
-    Altura.js"></script>
+    <script src="../js/pesoAltura.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
         integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

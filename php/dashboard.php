@@ -32,7 +32,7 @@ session_start();
                         <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
-                        <a href="gerenciar_atividade_fisica.php"><i class="fas fa-heartbeat"></i></a>
+                        <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_alimentos.php"><i class="fas fa-utensils"></i></a>
