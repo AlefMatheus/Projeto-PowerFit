@@ -1,7 +1,3 @@
-<?php
-include('conexao.php');
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -46,18 +42,25 @@ session_start();
         </sidebar>
         <main>
             <header>
-                <a href="perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
-                <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+                <a href="perfil.html"> <i class="fas fa-user"></i></a>
+                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i></a>
             </header>
             <div class="main-content">
-                <div class="imc-parent">
-                    <div class="imc">
-                        <h2>Seu imc é <span>19,5</span> - <span>NORMAL</span></h2>
+                <form action="gerenciarIMC.html" name="formImc" method="post">
+                    <div class="imc-parent">
+                        <div class="calculaImc">
+                            <label for="peso" class="form-label">Peso</label>
+                            <input type="text" name="peso" class="form-control" id="peso" placeholder="80">
+                            <label for="altura" class="form-label">Altura</label>
+                            <input type="text" name="altura" class="form-control" id="altura" placeholder="1.81">
+                            <input type="button" onclick="imc();" value="Calcular" id="calcular">
+                        </div>
+                        <div class="imc" id="resultado">
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="content" id="ajax-content">
-
             </div>
     </div>
 
@@ -73,10 +76,56 @@ session_start();
     <script src="../plugins/jquery/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/ajax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
-        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script type="text/javascript">
+        $(function () {
+        $('#peso').mask("000.00", {reverse: true})
+        $('#altura').mask("0.00", {reverse: true})
+        });
+    </script>
+
+    <script type="text/javascript">
+        //Entre 17 e 18,49    Abaixo do peso
+        //Entre 18,5 e 24,99  Peso normal
+        //Entre 25 e 29,99    Acima do peso
+        //Entre 30 e 34,99    Obesidade I
+        //Entre 35 e 39,99    Obesidade II
+        //Acima de 40         Obesidade III
+
+        const calcular = document.getElementById("calcular");
+
+        function imc() {
+            const peso = document.getElementById("peso").value;
+            const altura = document.getElementById("altura").value;
+            const resultado = document.getElementById("resultado");
+
+            if (peso !== '' && altura != '') {
+                const valorImc = (peso / (altura * altura)).toFixed(2);
+
+                let situacao = "";
+                if (valorImc < 18.5) {
+                    situacao = 'abaixo do peso.'
+                } else if (valorImc < 25) {
+                    situacao = 'no peso ideal. Parabéns'
+                } else if (valorImc < 30) {
+                    situacao = 'um pouco acima do peso.'
+                } else if (valorImc < 35) {
+                    situacao = 'com obesidade grau I.'
+                } else if (valorImc < 40) {
+                    situacao = 'com obesidade grau II.'
+                } else {
+                    situacao = 'com obesidade mórbida: grau III. Procure um profissional da área de saúde o quanto antes!'
+                }
+
+                resultado.textContent = `Seu IMC é: ${valorImc} e você está ${situacao}`;
+            } else {
+                alert('preenche essa porra ai maluco')
+            }
+        }
+
+        calcular.addEventListener('click', imc);
+    </script>
 </body>
 
 </html>
