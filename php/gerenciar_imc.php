@@ -42,8 +42,8 @@
         </sidebar>
         <main>
             <header>
-                <a href="perfil.html"> <i class="fas fa-user"></i></a>
-                <a href="PagSocio.html"> <i class="fas fa-sign-out-alt"></i></a>
+                <a href="../php/perfil.php"> <i class="fas fa-user"></i></a>
+                <a href="../php/painel_usuario.php"> <i class="fas fa-sign-out-alt"></i></a>
             </header>
             <div class="main-content">
                 <form action="gerenciarIMC.html" name="formImc" method="post">
