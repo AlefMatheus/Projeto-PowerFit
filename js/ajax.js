@@ -4,13 +4,13 @@ function fetchContent(el) {
     let view = el.getAttribute('a-view')
     let folder = el.getAttribute('a-folder')
     const scriptSRC = el.getAttribute('a-script')
-    fetch(`../ajax/${folder}/${view}.html`)
+    fetch(`../ajax/${folder}/${view}.php`)
         .then(response => {
-            let html = response.text()
-            return html
+            let php = response.text()
+            return php
         })
-        .then(html => {
-            content.innerHTML = html
+        .then(php => {
+            content.innerHTML = php
             return content
         })
         .then(() => {
