@@ -47,7 +47,7 @@
         color: white;
         margin-top: 100px;
     }
-
+    
     #botaoBanner {
         font-size: 15px;
         transition: 0.5s;
@@ -55,8 +55,8 @@
         margin-bottom: 30px;
         height: 100px;
         width: 200px;
-        color: black;
-        background-color: white;
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 7, 7);
         border-radius: 10px;
         border: 2px solid white;
         font-size: large;
@@ -66,7 +66,6 @@
         transition: 0.5s;
         color: #ffffff;
         background-color: rgba(255, 255, 255, 0);
-        
     }
     
     #botaoColuna {
@@ -102,7 +101,7 @@
     
     #planos {
         background: rgb(255, 143, 9);
-        background: linear-gradient(90deg, rgba(255, 143, 9, 1) 0%, rgba(252, 209, 0, 1) 86%, rgba(255, 247, 31, 1) 100%);
+        background: linear-gradient(90deg, rgb(255, 87, 9) 0%, rgb(252, 122, 0) 86%, rgb(255, 136, 0) 100%);
         padding: 50px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -138,6 +137,7 @@
         height: auto;
         margin: 10px;
         border: rgba(255, 255, 255, 0.096) solid 2px;
+        border-radius: 10px;
     }
     
     div.row {
@@ -204,8 +204,7 @@
     }
     
     #h2Equipe {
-        border-bottom: 1px solid;
-        border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+        border-bottom: 1px solid black;
     }
     /* ENCONTRA AQUI */
     
@@ -277,8 +276,7 @@
     
     #h1encontra {
         color: white;
-        border-bottom: 1px solid;
-        border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+        border-bottom: 1px solid white;
         padding: 10px;
         width: 60%;
         margin: auto;
@@ -286,8 +284,7 @@
     
     #h3encontra {
         color: white;
-        border-bottom: 1px solid;
-        border-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 221, 0)) 1;
+        border-bottom: 1px solid white;
         margin: auto;
         width: 20%;
         margin-bottom: 30px;
@@ -329,7 +326,7 @@
     }
     
     #assine:hover {
-        color: #fffb00;
+        color: #ff5100;
         transition: 0.5s;
         text-decoration: none;
     }
@@ -479,6 +476,85 @@
     
     @media only screen and (min-width: 992px) and (max-width: 1199px) {}
     
-    @media only screen and (min-width: 768px) and (max-width: 991px) {}
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #fotos {
+            display: flex;
+            flex-direction: column;
+        }
+        #anuncio {
+            height: 50%;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #containerEquipe {
+            display: none;
+        }
+        #h1encontra {
+            font-size: 2.5rem;
+            width: 60%;
+        }
+        #h3encontra {
+            width: 40%;
+            font-size: 1.7rem;
+        }
+        #encontra {
+            padding-bottom: 110px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+        }
+    }
     
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 767px) {
+        #content {
+            font-size: 2.5rem;
+        }
+        #botaoBanner {
+            width: 160px;
+            height: 90px;
+            font-size: 1.5rem;
+        }
+        #fotos {
+            display: flex;
+            flex-direction: column;
+        }
+        #conheca {
+            width: 90%;
+        }
+        #conhecaH2 {
+            font-size: 2.3rem;
+        }
+        #anuncio {
+            height: 50%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #h1encontra {
+            font-size: 1.7rem;
+            width: 100%;
+        }
+        #h3encontra {
+            width: 50%;
+            font-size: 1.7rem;
+        }
+        img#dicas {
+            margin-top: 70px;
+        }
+        #encontra {
+            padding-bottom: 110px;
+        }
+        #containerEquipe {
+            display: none;
+        }
+        #textFooter {
+            font-size: 1.3rem;
+        }
+        #h2Foot {
+            font-size: 1.7rem;
+        }
+        #liFoot {
+            font-size: 1.3rem;
+        }
+    }

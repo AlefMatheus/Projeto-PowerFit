@@ -57,9 +57,8 @@
             <video id="background" src="../video/malhando2.mp4" autoplay="true" muted="true" loop="true"></video>
         </div>
         <div id="conteudo">
-            <h1 data-aos="fade-up" data-aos-duration="1500" id="content">Bem vindo ao SGT - PowerFit</h1>
-            <div data-aos="fade-up" data-aos-duration="1500" id="content2">
-                <h4 style="margin-top: 15px;">O seu site de gerenciamento de treinos</h4>
+            <h1 data-aos="fade-up" data-aos-duration="1000" id="content">Bem vindo ao SGT - PowerFit</h1>
+                <h4 data-aos="fade-up" data-aos-duration="1000" id="content2"style="margin-top: 15px;">O seu site de gerenciamento de treinos</h4>
                 <br>
                 <form id="form">
                     <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12" id="botaoColuna">
@@ -73,14 +72,14 @@
 
     <!--PLANOS-->
     <div class="container" id="planos" style="margin-top: 715px;">
-        <div style="margin-bottom: 20px;" id="conheca" style=" text-align: center;" data-aos="fade-up"
+    <div style="margin-bottom: 20px;" id="conheca" style=" text-align: center;" data-aos="fade-up"
             data-aos-duration="500">
             <h1 id="conhecaH2">CONHECA NOSSOS PLANOS:</h1>
         </div>
         <div class="flexbox">
             <div id="fotos" class="row">
                 <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                    <div id="foto"><img class="img-responsive" src="https://i.ibb.co/xshT854/Mensal-Livre-1.png"></div>
+                    <div id="foto"><img class="img-responsive img-rounded" src="https://i.ibb.co/xshT854/Mensal-Livre-1.png"></div>
                     <ul id="beneficios">
                         <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
                         <li id="beneficiosLi">Área para aeróbicos;</li>
@@ -91,7 +90,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                    <div id="foto"><img class="img-responsive" src="https://i.ibb.co/XtMDZR1/Mensal-Livre-2.png"></div>
+                    <div id="foto"><img class="img-responsive img-rounded" src="https://i.ibb.co/XtMDZR1/Mensal-Livre-2.png"></div>
                     <ul id="beneficios">
                         <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
                         <li id="beneficiosLi">Área para aeróbicos;</li>
@@ -111,13 +110,13 @@
     <!--ENCONTRA AQUI-->
     <div class="container-fluid" id="encontra">
         <h2 id="h1encontra" style="text-align: center;" data-aos="fade" data-aos-duration="1500">O QUE VOCÊ ENCONTRA NA
-            POWERFIT - SGT</h2>
+            POWERFIT</h2>
         <br>
-        <h3 id="h3encontra" style="text-align: center;" data-aos="fade-up" data-aos-duration="1000">Dicas sobre:</h3>
+        <h3 id="h3encontra" style="text-align: center;" data-aos="fade-up" data-aos-duration="1000">DICAS SOBRE:</h3>
         <div class="row">
             <div class="flex">
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" class="img-responsive"
+                    <p class="text-center"><img id="dicas" class="img-responsive img-rounded"
                             src="https://i.ibb.co/TmjghT7/SA-DE-12.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
@@ -125,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" class="img-responsive"
+                    <p class="text-center"><img id="dicas" class="img-responsive img-rounded"
                             src="https://i.ibb.co/gj26vyV/SA-DE-13.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
@@ -133,7 +132,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
-                    <p class="text-center"><img id="dicas" class="img-responsive"
+                    <p class="text-center"><img id="dicas" class="img-responsive img-rounded"
                             src="https://i.ibb.co/xfRFZxK/SA-DE-11.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
@@ -188,22 +187,22 @@
     <!--FIM EQUIPE-->
 </body>
 
-<footer data-aos="fade-up" data-aos-duration="200" style="z-index: 1;">
+<footer style="z-index: 1;">
     <!--SOBRE AGT-->
     <div id="principal">
         <div id="subPrincipal" class="container">
-            <h2>Sobre o PowerFit:</h2>
-            <p>O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e
-                muito mais! <a id="assine" href="../php/cadastrar_usuario.php">Assine já e mantenha-se saudável!</a></p>
+            <h2 id="h2Foot">Sobre o PowerFit:</h2>
+            <p id="textFooter">O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais!</p>
+            <p><a id="assine" href="../php/cadastrar_usuario.php">Assine já e mantenha-se saudável!</a></p>
         </div>
         <br>
         <div class="container"></div>
         <div id="subPrincipal" class="container">
-            <h2>Funcionalidades:</h2>
-            <li>Análise e cáculo de IMC;</li>
-            <li>Gráficos de desempenho;</li>
-            <li>Controle de alimentação e treinos;</li>
-            <li>Gerenciamento de altura e peso.</li>
+            <h2 id="h2Foot">Funcionalidades:</h2>
+            <li id=""liFoot>Análise e cáculo de IMC;</li>
+            <li id=""liFoot>Gráficos de desempenho;</li>
+            <li id=""liFoot>Controle de alimentação e treinos;</li>
+            <li id=""liFoot>Gerenciamento de altura e peso.</li>
         </div>
     </div>
     <!--FIM SOBRE-->

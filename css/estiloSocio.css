@@ -341,10 +341,13 @@ div#subPrincipal {
     }
     #textTitulos {
         width: 100%;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+    }
+    #textTitulos3 {
+        font-size: 1.6rem;
     }
     h3#subTitulo {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     div#img {
         margin-top: 30px;
@@ -357,7 +360,7 @@ div#subPrincipal {
         width: 70%;
     }
     #textTitulos2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     #subTitulo2 {
         font-size: 1.7rem;
@@ -379,7 +382,7 @@ div#subPrincipal {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
-        width: 450px;
+        width: 400px;
         margin: auto;
     }
     #contato {
@@ -393,9 +396,6 @@ div#subPrincipal {
     }
     .carousel-inner {
         margin: auto;
-    }
-    #carousel {
-        margin-left: 5px;
     }
     #textFooter {
         font-size: 1.3rem;

@@ -114,20 +114,20 @@ include('verifica_login.php');
             <div id="textParagrafosModalidades">
                 <div data-aos="fade-up" data-aos-duration="1000" class="flex">
                     <div class="col-sm-3" id="img">
-                        <h3 class="text-center">Musculação</h3>
+                        <h3 id="subTitulo" class="text-center">Musculação</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/FKSsmyn/Design-sem-nome-14.png" />
                         <p class="text-center"><a href="../views/modmusculacao.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Inscreva-se
                                 &raquo;</a></p>
 
                     </div>
                     <div class="col-sm-3" id="img">
-                        <h3 class="text-center">Natação</h3>
+                        <h3 id="subTitulo" class="text-center">Natação</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/sCMKyY0/Design-sem-nome-13.png" />
                         <p  class="text-center"><a href="../views/modnatacao.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Inscreva-se
                                 &raquo;</a></p>
                     </div>
                     <div class="col-sm-3" id="img">
-                        <h3 class="text-center">CrossFit</h3>
+                        <h3 id="subTitulo" class="text-center">CrossFit</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/8syZ6Mr/Design-sem-nome-15.png" />
                         <p class="text-center"><a href="../views/modcross.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Inscreva-se
                                 &raquo;</a></p>
@@ -135,7 +135,7 @@ include('verifica_login.php');
 
                     </div>
                     <div class="col-sm-3" id="img">
-                        <h3 class="text-center">Pilates</h3>
+                        <h3 id="subTitulo" class="text-center">Pilates</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/whyxPXJ/Design-sem-nome-16.png" />
                         <p class="text-center"><a href="../views/modpilates.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Inscreva-se
                                 &raquo;</a></p>
@@ -156,25 +156,25 @@ include('verifica_login.php');
             <div class="col-sm-6" id="area-dicas">
                 <h2 data-aos="fade-up" data-aos-duration="1000" class="text-center" id="textTitulos2">ÁREA DE DICAS</h2>
 
-                <h4 data-aos="fade-up" data-aos-duration="500" class="text-center">Algumas dicas poderosíssimas para
+                <h4 data-aos="fade-up" data-aos-duration="500" class="text-center" id="textTitulos3">Algumas dicas poderosíssimas para
                     elevar seu desempenho!</h4>
                 <div class="row" id="imgDicas">
-                    <div data-aos="fade-left" data-aos-duration="500" class="col-sm-6">
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6">
                         <a href="../views/resumoMusculacao.html"><img id="imagemDicas" class="img-responsive"
-                                src="https://i.ibb.co/mRJfbtp/SA-DE.png"></a>
+                                src="https://i.ibb.co/xfNbB8K/SA-DE-2.png"></a>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000" class="col-sm-6">
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6">
                         <a href="..//views/resumoNutricao.html"><img id="imagemDicas" class="img-responsive"
-                                src="https://i.ibb.co/zbJwymQ/SA-DE-1.png"></a>
+                                src="https://i.ibb.co/7WY38Zd/SA-DE-1.png"></a>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000" class="col-sm-6">
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6">
                         <a href="..//views/resumoSaude.html"><img id="imagemDicas" class="img-responsive"
-                                src="https://i.ibb.co/VJgGsF4/SA-DE-3.png"></a>
+                                src="https://i.ibb.co/7rjQwz2/SA-DE.png"></a>
 
                     </div>
                 </div>
             </div>
-            <div data-aos="flip-right" data-aos-duration="1500" id="acss-dashboard" class="col-sm-6">
+            <div data-aos="fade" data-aos-duration="1500" id="acss-dashboard" class="col-sm-6">
                 <img style="width:80%" src="https://i.ibb.co/vBcj0KQ/Powerfit-1.png">
                 <h4 id="contato">Entre em contato: (24) 999203432</h4>
             </div>
@@ -186,7 +186,7 @@ include('verifica_login.php');
     <div id="pagina" class="container">
         <div class="row" id="carousel">
 
-            <h2 data-aos="fade-left" data-aos-duration="1000" id="textTitulos2" class="text-center tituloCarousel"
+            <h2 data-aos="fade" data-aos-duration="500" id="textTitulos2" class="text-center tituloCarousel"
                 style="margin-bottom: 20px;">SEUS PROFESSORES:</h2>
 
             <div data-aos="fade-up" data-aos-duration="1000" class="col-sm-12">
@@ -233,29 +233,29 @@ include('verifica_login.php');
     </div>
 </body>
 
-<footer data-aos="fade-up" data-aos-duration="200">
+<footer>
     <!--SOBRE AGT-->
     <div id="principal">
         <div id="subPrincipal" class="container">
-            <h2>Sobre o PowerFit:</h2>
+            <h2 id="h2Foot">Sobre o PowerFit:</h2>
 
-            <p>O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e
+            <p id="textFooter">O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e
                 muito mais!</p>
 
         </div>
         <br>
         <div class="container"></div>
         <div id="subPrincipal" class="container">
-            <h2>Funcionalidades:</h2>
-            <li>Análise e cáculo de IMC;</li>
-            <li>Gráficos de desempenho;</li>
-            <li>Controle de alimentação e treinos;</li>
-            <li>Gerenciamento de altura e peso.</li>
+            <h2 id="h2Foot">Funcionalidades:</h2>
+            <li id="liFoot">Análise e cáculo de IMC;</li>
+            <li id="liFoot">Gráficos de desempenho;</li>
+            <li id="liFoot">Controle de alimentação e treinos;</li>
+            <li id="liFoot">Gerenciamento de altura e peso.</li>
         </div>
     </div>
     <!--FIM SOBRE-->
     <nav style="position: absolute; width: 100%;" class="navbar navbar-default navbar-static-top sem-margem">
-        <p class="navbar-text">&copy; 2021 Copyright - PowerFit</p>
+        <p style="margin-left: 20px;" class="navbar-text">&copy; 2021 Copyright - PowerFit</p>
     </nav>
 </footer>
 
@@ -296,9 +296,6 @@ include('verifica_login.php');
     .navbar-top {
         background-color: rgba(255, 255, 255, 0);
     }
-
-
-
     .navbar-top1 {
         transition: 0.5s;
     }
