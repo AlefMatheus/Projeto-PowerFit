@@ -66,6 +66,17 @@ include('verifica_login.php');
                             </ul>
                         </li>
                     </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdownn">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../views/modmusculacao.html">MUSCULAÇÃO</a></li>
+                                <li><a href="../views/modnatacao.html">NATAÇÃO</a></li>
+                                <li><a href="../views/modcross.html">CROSSFIT</a></li>
+                                <li><a href="../views/modpilates.html">PILATES</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
 
                         <li><a href="perfil.php"><span class="glyphicon glyphicon-user"></span> PERFIL</a></li>
