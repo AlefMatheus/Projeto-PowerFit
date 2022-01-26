@@ -1,6 +1,7 @@
 <?php
 include('perfil_upload_foto.php');
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -33,10 +34,28 @@ include('perfil_upload_foto.php');
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
 
-    <title></title>
+    <title>Meu Perfil</title>
 </head>
 
-<body style="margin-top: 20px;">
+<style>
+    ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgb(12, 12, 12);
+    box-shadow: inset 0 0 5px rgb(22, 22, 22);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(255, 143, 9);
+    background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+    border-radius: 100px;
+}
+</style>
+
+<body>
 
     <!--NAV BAR-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
@@ -50,11 +69,30 @@ include('perfil_upload_foto.php');
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
                 </div>
                 <div id="barraNav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="dashboard.php">MEU DASHBOARD</a></li>
+                    <li><a href="../php/dashboard.php">MEU DASHBOARD</a></li>
+                        <li class="dropdownn">
+
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">DICAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../views/resumoMusculacao.html">EXERCICÍOS FÍSICOS</a></li>
+                                <li><a href="../views/resumoNutricao.html">NUTRIÇÃO</a></li>
+                                <li><a href="../views/resumoSaude.html">SAÚDE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdownn">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../views/modmusculacao.html">MUSCULAÇÃO</a></li>
+                                <li><a href="../views/modnatacao.html">NATAÇÃO</a></li>
+                                <li><a href="../views/modcross.html">CROSSFIT</a></li>
+                                <li><a href="../views/modpilates.html">PILATES</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="../php/painel_usuario.php"><span class="glyphicon glyphicon-log-in"></span>
@@ -69,15 +107,14 @@ include('perfil_upload_foto.php');
 
     <!--BANNER-->
     <div id="banner">
-        <video id="background" src="../video/musculacao.mp4" autoplay="true" muted="true" loop="true">
-
+        <video id="background" src="..//video/perfilBan2.mp4" autoplay="true" muted="true" loop="true">
         </video>
     </div>
     <!--FIM BANNER-->
 
     <!--CONTEUDO -->
-    <div class="main-content">
-        <div class="main-content-title">
+    <div class="main-content" id="mainMedia">
+        <div class="main-content-title2">
             <h1 id="title">PERFIL</h1>
         </div>
         <div class="perfil-parent">
@@ -110,43 +147,43 @@ include('perfil_upload_foto.php');
                     unset($_SESSION['arquivo-invalido']);
                     ?>
                 </div>
-                <div class="dados-perfil">
-                    <h4 class="dados-perfil-item">Nome completo:
+                <div id="perfil-querie"  class="dados-perfil">
+                    <h4 class="dados-perfil-item">NOME:
                         <span>
                             <?php echo ($_SESSION['nome']);?>
                         </span>
                     </h4>
-                    <h4 class="dados-perfil-item">Nome de usario:
+                    <h4 class="dados-perfil-item">NOME DE USUÁRIO:
                         <span>
                             <?php echo ($_SESSION['usuario']);?>
                         </span>
                     </h4>
 
-                    <h4 class="dados-perfil-item">Data de nascimento:
+                    <h4 class="dados-perfil-item">DATA DE NASCIMENTO:
                         <span>
                             <?php echo ($_SESSION['idade']);?>
                         </span>
                     </h4>
 
-                    <h4 class="dados-perfil-item">Genero:
+                    <h4 class="dados-perfil-item">GÊNERO:
                         <span>
                             <?php echo ($_SESSION['sexo']);?>
                         </span>
                     </h4>
 
-                    <h4 class="dados-perfil-item">Email:
+                    <h4 class="dados-perfil-item">EMAIL:
                         <span>
                             <?php echo ($_SESSION['email']);?>
                         </span>
                     </h4>
 
-                    <h4 class="dados-perfil-item">Status
+                    <h4 class="dados-perfil-item">STATUS:
                         <span>
                             <?php echo ($_SESSION['status']);?>
                         </span>
                     </h4>
 
-                    <h4 class="dados-perfil-item">Ativo desde:
+                    <h4 class="dados-perfil-item">ATIVO DESDE:
                         <span>
                             <?php echo ($_SESSION['data_cadastro']);?>
                         </span>

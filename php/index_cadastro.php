@@ -128,6 +128,7 @@ include("conexao.php")
                         <select name="sexo" class="form-select" id="inputSexo">
                             <option value="Masculino">Masculino</option>
                             <option value="Feminino">Feminino</option>
+                            <option value="Indefinido">Indefinido</option>
                         </select>
                     </div>
                     <div class="mb-3">

@@ -90,7 +90,11 @@
             }
             
             div.main-content-title {
-                padding: 5px 0;
+                padding: 10px;
+            }
+            
+            #content-title-h2 {
+                padding: 10px;
             }
             
             div.main-content-title h2 {
@@ -258,30 +262,6 @@
                 font-size: 15px;
             }
             
-            @media screen and (max-width: 1150px) {
-                .dashboard-flex-parent {
-                    flex-wrap: wrap;
-                }
-                .dashboard-box {
-                    padding-top: 0;
-                    height: 240px;
-                    border-radius: 15px;
-                    padding-bottom: 10px;
-                    margin: 20px;
-                }
-                div.box-icon {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                }
-                div.box-value-percentual {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    color: white;
-                    margin-top: 15px;
-                }
-            }
-            
             .calculaImc {
                 display: flex;
                 flex-direction: row;
@@ -330,4 +310,30 @@
             #resultado {
                 font-size: 1.6rem;
                 font-family: Outfit;
+            }
+            
+            @media screen and (max-width: 1150px) {
+                div.main-content-title {
+                    text-align: center;
+                }
+                .dashboard-flex-parent {
+                    flex-wrap: wrap;
+                }
+                .dashboard-box {
+                    padding-top: 0;
+                    height: 240px;
+                    border-radius: 15px;
+                    padding-bottom: 10px;
+                    margin: 20px;
+                }
+                div.box-icon {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                div.box-value-percentual {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 15px;
+                }
             }

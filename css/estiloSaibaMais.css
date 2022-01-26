@@ -8,15 +8,6 @@
     color: white;
 }
 
-#conteudoNutricao {
-    font-family: 'Exo 2', sans-serif;
-    font-size: larger;
-    margin-top: 260px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-left: 4px solid #1c1b1c;
-}
-
 body {
     background-color: #1c1b1c;
 }
@@ -25,51 +16,37 @@ p {
     font-family: Outfit;
     font-size: 1.7rem;
 }
-.altura-col{
 
-   height:460px;    
-   overflow: hidden; 
-}
-
-.video-contanier{
-    overflow:hidden;
-    display:block;
-    height: 460px;
-
-
-}
-#videobjump{
-    margin-top: -320px;
-}
-#videohclimb{
-    margin-top:-200px;
-}
-#videocordasimul{
-    margin-top: -150px;
-    
-}
-#videostiff{
-    margin-top: -220px;
-}
-#videocross{
-    margin-top: -200px;
-}
-#videorsentada{
-    margin-top: -220px;
-}
-#videocrawl{
-    margin-top: -270px;
-}
-#videonborboleta{
-margin-top:-150px ;
-}
-#videoponte{
-    margin-top: -350px;
-}
-#videoombros{
-    margin-top: -550px;
-}
-#videorollup{
-    margin-top:-400px ;
-    
+@media only screen and (max-width: 767px) {
+    #colunaMusculacao {
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    iframe {
+        height: 190px;
+        width: 350px;
+    }
+    #rowMusculacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #textFooter {
+        font-size: 1.3rem;
+        font-family: Comfortaa;
+    }
+    #h2Foot {
+        font-size: 1.7rem;
+    }
+    #liFoot {
+        font-size: 1.3rem;
+    }
 }

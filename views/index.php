@@ -27,6 +27,24 @@
     <title>Home - PowerFit</title>
 </head>
 
+<style>
+    ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgb(12, 12, 12);
+    box-shadow: inset 0 0 5px rgb(22, 22, 22);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(255, 143, 9);
+    background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+    border-radius: 100px;
+}
+</style>
+
 <body style="margin-top: 20px;">
     <!--NAV BAR-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
@@ -199,15 +217,15 @@
         <div class="container"></div>
         <div id="subPrincipal" class="container">
             <h2 id="h2Foot">Funcionalidades:</h2>
-            <li id=""liFoot>Análise e cáculo de IMC;</li>
-            <li id=""liFoot>Gráficos de desempenho;</li>
-            <li id=""liFoot>Controle de alimentação e treinos;</li>
-            <li id=""liFoot>Gerenciamento de altura e peso.</li>
+            <li id="liFoot">Análise e cáculo de IMC;</li>
+            <li id="liFoot">Gráficos de desempenho;</li>
+            <li id="liFoot">Controle de alimentação e treinos;</li>
+            <li id="liFoot">Gerenciamento de altura e peso.</li>
         </div>
     </div>
     <!--FIM SOBRE-->
     <nav style="position: absolute; width: 100%;" class="navbar navbar-default navbar-static-top sem-margem">
-        <p class="navbar-text">&copy; 2021 Copyright - PowerFit</p>
+        <p style="margin-left: 20px;" class="navbar-text">&copy; 2021 Copyright - PowerFit</p>
     </nav>
 </footer>
 <script src="../plugins/jquery/jquery.min.js"></script>

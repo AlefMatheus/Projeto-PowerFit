@@ -117,6 +117,7 @@ h3.text-center {
     width: 100%;
     max-width: 400px;
     height: auto;
+    border-radius: 5px;
 }
 
 #btsaiba {
@@ -202,6 +203,28 @@ h3.text-center {
     width: 100%;
     height: 100%;
 }
+
+
+/*SCROLL BAR*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgb(12, 12, 12);
+    box-shadow: inset 0 0 5px rgb(22, 22, 22);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(153, 5, 0);
+    background: linear-gradient(0deg, rgb(134, 0, 0) 0%, rgb(161, 5, 0) 43%, rgb(189, 0, 0) 81%, rgb(224, 26, 0) 99%);
+    border-radius: 100px;
+}
+
+
+/*FIM SCROLL BAR*/
 
 
 /* FOOTER */
@@ -334,6 +357,7 @@ div#subPrincipal {
     #content {
         margin-left: 100px;
         margin-right: 100px;
+        font-size: 2.5rem;
     }
     h4 {
         font-size: 1.3rem;

@@ -1,3 +1,8 @@
+<?php
+include('conexao.php');
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,7 +13,7 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
-    <title>Health Track</title>
+    <title>Gerenciar IMC</title>
 </head>
 
 <body>
@@ -42,10 +47,13 @@
         </sidebar>
         <main>
             <header>
-                <a href="../php/perfil.php"> <i class="fas fa-user"></i></a>
-                <a href="../php/painel_usuario.php"> <i class="fas fa-sign-out-alt"></i></a>
+                <a href="../php/perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
+                <a href="../php/painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
             </header>
             <div class="main-content">
+            <div class="main-content-title">
+                        <h2 id="content-title-h2">GERENCIAR IMC</h2>
+                    </div>
                 <form action="gerenciarIMC.html" name="formImc" method="post">
                     <div class="imc-parent">
                         <div class="calculaImc">

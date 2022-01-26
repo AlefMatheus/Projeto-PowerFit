@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
-    <title>Health Track</title>
+    <title>Gerenciar Pressão Arterial</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@ session_start();
 
                 
                 <a href="perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
-                <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+                <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
             </header>
 
             <div class="main-content">
