@@ -97,7 +97,7 @@
         <div class="flexbox">
             <div id="fotos" class="row">
                 <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                    <div id="foto"><img class="img-responsive img-rounded" src="https://i.ibb.co/xshT854/Mensal-Livre-1.png"></div>
+                    <div id="foto"><a href="..//php/index_login.php"><img class="img-responsive img-rounded" src="https://i.ibb.co/xshT854/Mensal-Livre-1.png"></a></div>
                     <ul id="beneficios">
                         <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
                         <li id="beneficiosLi">Área para aeróbicos;</li>
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 animate" id="anuncio" data-aos="fade-up" data-aos-duration="1000">
-                    <div id="foto"><img class="img-responsive img-rounded" src="https://i.ibb.co/XtMDZR1/Mensal-Livre-2.png"></div>
+                    <div id="foto"><a href="..//php/index_login.php"><img class="img-responsive img-rounded" src="https://i.ibb.co/XtMDZR1/Mensal-Livre-2.png"></a></div>
                     <ul id="beneficios">
                         <li id="beneficiosLi">Acesso a todos os equipamentos da academia;</li>
                         <li id="beneficiosLi">Área para aeróbicos;</li>
@@ -138,7 +138,7 @@
                             src="https://i.ibb.co/TmjghT7/SA-DE-12.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
-                                href="../php/index_cadastro.php">Saiba mais &raquo;</a></p>
+                                href="../php/index_login.php">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
@@ -146,7 +146,7 @@
                             src="https://i.ibb.co/gj26vyV/SA-DE-13.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
-                                href="../php/index_cadastro.php">Saiba mais &raquo;</a></p>
+                                href="../php/index_login.php">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
                 <div class="col-sm-4" data-aos="slide-up" data-aos-duration="1000">
@@ -154,7 +154,7 @@
                             src="https://i.ibb.co/xfRFZxK/SA-DE-11.png"></p>
                     <div id="legenda">
                         <p class="text-center"><a id="btsaiba" class="btn btn-info btn-lg" role="button"
-                                href="../php/index_cadastro.php">Saiba mais &raquo;</a></p>
+                                href="../php/index_login.php">Saiba mais &raquo;</a></p>
                     </div>
                 </div>
             </div>
@@ -168,25 +168,25 @@
             <div id="segundaColuna" class="col-sm-4" data-aos="fade-up" data-aos-duration="500">
                 <h2 id="h2Equipe">NOSSA EQUIPE:</h2>
                 <p id="social">João Pedro F. B. Ramos</p>
-                <a id="instagram" href=""><img id="insta"
+                <a id="instagram" href="https://www.instagram.com/fbr_joao/"><img id="insta"
                         src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
                 <a id="facebook" href=""><img id="face"
                         src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
 
                 <p id="social">Alef Matheus T. Garcia</p>
-                <a id="instagram" href=""><img id="insta"
+                <a id="instagram" href="https://www.instagram.com/alefmatheuus/"><img id="insta"
                         src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
                 <a id="facebook" href=""><img id="face"
                         src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
 
                 <p id="social">Caique de Magalhães Rozatto</p>
-                <a id="instagram" href=""><img id="insta"
+                <a id="instagram" href="https://www.instagram.com/caiquerozatto/"><img id="insta"
                         src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
                 <a id="facebook" href=""><img id="face"
                         src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
 
                 <p id="social">Thiago Azevedo Araújo</p>
-                <a id="instagram" href=""><img id="insta"
+                <a id="instagram" href="https://www.instagram.com/vulgo1th/"><img id="insta"
                         src="https://i.ibb.co/jzp24XL/3228551-app-b-w-instagram-logo-media-icon.png"></a>
                 <a id="facebook" href=""><img id="face"
                         src="https://i.ibb.co/3rQyBvQ/3228552-app-b-w-facebook-logo-media-icon.png"></a>
