@@ -45,6 +45,7 @@
             }
             
             .panel-row button {
+                border-radius: 13px;
                 border: none;
                 height: 130px;
                 background: linear-gradient(90deg, rgb(255, 115, 0) 0%, rgb(255, 60, 0) 50%, rgb(255, 51, 0) 100%);
@@ -53,6 +54,18 @@
                 transition: 0.1s;
                 font-family: Comfortaa;
             }
+            #btn-calcular {
+                border: none;
+                background: linear-gradient(90deg, rgb(255, 115, 0) 0%, rgb(255, 60, 0) 50%, rgb(255, 51, 0) 100%);
+                font-size: 1.1rem;
+                color: #fff;
+                transition: 0.1s;
+                font-family: Comfortaa;
+            }
+            #btn-calcular:hover {
+                transform: scale(1.10);
+                transition: 0.2s;
+            }
             
             .panel-row button:hover {
                 transform: scale(1.10);
@@ -60,6 +73,7 @@
             }
             
             div#ajax-content {
+                border-radius: 12px;
                 width: 100%;
                 margin-top: 20px;
                 background-color: #f5f5f5;
@@ -117,7 +131,7 @@
             
             div.imc {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 max-width: 1100px;
@@ -126,6 +140,9 @@
                 background-color: rgb(12, 12, 12);
                 box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
                 color: white;
+            }
+            #value-imc {
+                color:#ff5e00;
             }
             
             div.imc h2 {

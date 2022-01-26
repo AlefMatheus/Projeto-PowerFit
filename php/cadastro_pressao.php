@@ -16,7 +16,7 @@ if($conexao->query($sql) === true){
     $_SESSION['status_cadastro'] = true;
     $_SESSION['registro_dashboard'] = true;
     $_SESSION['data_pressao'] = $data_pressao;
-    $_SESSION['pressao'] = $pressao;
+    $_SESSION['pressao'] = $pressao.' MMHC';
     header('location: gerenciar_pressao_arterial.php');
     exit();
 };
