@@ -41,6 +41,23 @@ if (isset($_SESSION['usuario'])){
         $_SESSION['data_pressao'] = ('');
     }
 
+    //captura os dados do imc 
+    $query = "select * from imc_usuario where usuario = '$_SESSION[usuario]';";
+    $result = mysqli_query($conexao, $query);
+    $row = mysqli_num_rows($result);   
+    $dados = mysqli_fetch_array($result);
+
+    if ($row >= 1){
+        $_SESSION['valorImc'] = $dados['valor'];
+        $_SESSION['estadoIMC'] = $dados['estado_imc'];
+        $_SESSION['situacao'] =  $dados['situacao'];
+
+    } else {
+        $_SESSION['valorImc'] = ('');
+        $_SESSION['estadoIMC'] = ('');
+        $_SESSION['situacao'] = ('');
+    }
+
     //captura os dados do usuario na tabela atividade
     $query = "select atividade, duracao_atividade, data_atividade from atividade_usuario where usuario = '$_SESSION[usuario]';";
     $result = mysqli_query($conexao, $query);

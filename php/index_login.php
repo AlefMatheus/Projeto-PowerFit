@@ -54,7 +54,7 @@ session_start()
                     <?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
-                    <div id="erro-login">
+                    <div class="alert alert-danger" role="alert">
                         <p>Usuario ou senha Invalidos</p>
                     </div>
                     <?php

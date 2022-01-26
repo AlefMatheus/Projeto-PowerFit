@@ -11,7 +11,7 @@ $sql = "UPDATE pressao_usuario  set pressao = '$pressao', data_pressao = '$data_
 if($conexao->query($sql) === true){
     $_SESSION['status_alteracao'] = true;
     $_SESSION['data_pressao'] = $data_pressao;
-    $_SESSION['pressao'] = $pressao;
+    $_SESSION['pressao'] = $pressao.' MMHC';
     header('location: gerenciar_pressao_arterial.php');
     exit();
 } else {

@@ -87,10 +87,12 @@ session_start();
                                     <div class="box-icon box-imc">
                                         <i class="fas fa-calculator"></i>
                                     </div>
-                                    <div class="value"></div>
+                                    <div class="value">
+                                        <?php echo($_SESSION['valorImc']);?>
+                                    </div>
                                     <div class="type">IMC</div>
                                     <div class="box-value-percentual box-value-imc">
-                                        <span></span>
+                                        <span><?php echo($_SESSION['estadoIMC']);?></span>
                                     </div>
                                 </div>
                             </div>

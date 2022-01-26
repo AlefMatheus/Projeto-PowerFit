@@ -51,9 +51,9 @@ $idade = date('Y-m-d', strtotime(str_replace('/','-',$idade)));
 
 
 $sql = "INSERT INTO cliente (nome, sexo, nascimento, usuario, email, senha, status_atividade, data_cadastro) VALUES ('$nome', '$sexo', '$idade', '$usuario','$email','$senha',$status_atividade, NOW())";
-//$sqlDashboard = "INSERT INTO dashboard (usuario_dashboard) VALUES ('$usuario')";
+$sqlimc = "INSERT INTO imc_usuario (usuario) VALUES ('$usuario')";
 
-if($conexao->query($sql) === TRUE ){ //and $conexao->query($sqlDashboard) === TRUE ) {
+if($conexao->query($sql) === TRUE and $conexao->query($sqlimc) === TRUE ) {
 	$_SESSION['status_cadastro'] = true;
 }
 $conexao->close();

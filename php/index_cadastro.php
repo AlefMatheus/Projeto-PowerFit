@@ -64,7 +64,7 @@ include("conexao.php")
                     <?php
                     if (isset($_SESSION['status_cadastro'])):
                     ?>
-                    <div id="success-login">
+                    <div class="alert alert-success" role="alert">
                         <p>Cadastro efetuado com sucesso! <br>
                             faça login informando o seu email e senha clicando <a href="index_login.php">aqui</a></p>
                     </div>
@@ -75,7 +75,7 @@ include("conexao.php")
                     <?php
                     if (isset($_SESSION['usuario_existe'])):
                     ?>
-                    <div id="erro-login">
+                    <div class="alert alert-danger" role="alert">
                         <p>O usuario escolhido ja existe. Informe outro e tente novamente.</p>
                     </div>
                     <?php
@@ -85,7 +85,7 @@ include("conexao.php")
                     <?php
                     if (isset($_SESSION['campo_vazio'])):
                     ?>
-                    <div id="erro-login">
+                    <div class="alert alert-danger" role="alert">
                         <p>Preencha todos os campos fdp</p>
                     </div>
                     <?php
@@ -95,7 +95,7 @@ include("conexao.php")
                     <?php
                     if (isset($_SESSION['senhas-nao-coincidem'])):
                     ?>
-                    <div id="erro-login">
+                    <div class="alert alert-danger" role="alert">
                         <p>As senhas nao coincidem.</p>
                     </div>
                     <?php
@@ -105,7 +105,7 @@ include("conexao.php")
                     <?php
                     if (isset($_SESSION['minimo-senha'])):
                     ?>
-                    <div id="erro-login">
+                    <div class="alert alert-danger" role="alert">
                         <p>A senha deve ter no minimo 8 caracteres.</p>
                     </div>
                     <?php
