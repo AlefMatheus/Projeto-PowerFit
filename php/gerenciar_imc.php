@@ -102,15 +102,12 @@ session_start();
         //Acima de 40         Obesidade III
 
         const calcular = document.getElementById("calcular");
-
         function imc() {
             const peso = document.getElementById("peso").value;
             const altura = document.getElementById("altura").value;
             const resultado = document.getElementById("resultado");
-
             if (peso !== '' && altura != '') {
                 const valorImc = (peso / (altura * altura)).toFixed(2);
-
                 let situacao = "";
                 if (valorImc < 18.5) {
                     situacao = 'abaixo do peso.'
@@ -125,13 +122,11 @@ session_start();
                 } else {
                     situacao = 'com obesidade mórbida: grau III. Procure um profissional da área de saúde o quanto antes!'
                 }
-
                 resultado.textContent = `Seu IMC é: ${valorImc} e você está ${situacao}`;
             } else {
                 alert('preenche essa porra ai maluco')
             }
         }
-
         calcular.addEventListener('click', imc);
     </script>
 </body>
