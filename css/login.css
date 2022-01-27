@@ -118,19 +118,6 @@
                 transition: 0.5s;
                 text-decoration: none;
             }
-            /* FOOTER */
-            
-            div#principal {
-                margin-top: 40px;
-                padding: 50px;
-                padding-bottom: 50px;
-                background-color: #090909;
-                color: #ffffff;
-            }
-            
-            div#subPrincipal {
-                border-left: 1px solid yellow;
-            }
             
             @media only screen and (max-width: 1199px) {
                 .div-banner {

@@ -16,7 +16,30 @@ session_start();
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
     <title>Gerenciar IMC</title>
 </head>
-
+<style>
+    @media screen and (max-width: 768px) {
+        .calculaImc{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #resultado{
+            padding: 10px;
+            margin-top: -50px;
+            margin-left: 20px;
+        }
+        h2{
+            font-size: 1.3rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+    }
+</style>
 <body>
     <div class="flex-dashboard">
     <sidebar>

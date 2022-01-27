@@ -54,6 +54,7 @@
                 transition: 0.1s;
                 font-family: Comfortaa;
             }
+            
             #btn-calcular {
                 border: none;
                 background: linear-gradient(90deg, rgb(255, 115, 0) 0%, rgb(255, 60, 0) 50%, rgb(255, 51, 0) 100%);
@@ -62,6 +63,7 @@
                 transition: 0.1s;
                 font-family: Comfortaa;
             }
+            
             #btn-calcular:hover {
                 transform: scale(1.10);
                 transition: 0.2s;
@@ -141,8 +143,9 @@
                 box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
                 color: white;
             }
+            
             #value-imc {
-                color:#ff5e00;
+                color: #ff5e00;
             }
             
             div.imc h2 {

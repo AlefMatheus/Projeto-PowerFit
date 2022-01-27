@@ -14,7 +14,22 @@ session_start();
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
     <title>Gerenciar Pressão Arterial</title>
 </head>
-
+<style>
+    @media screen and (max-width: 768px) {
+        .panel-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        button.panel {
+            width: 100%;
+            height: 100%;
+            margin: 20px;
+            padding: 15px;
+            font-size: 0.85rem;
+        }
+    }
+</style>
 <body>
     <div class="flex-dashboard">
     <sidebar>
@@ -46,8 +61,6 @@ session_start();
         </sidebar>
         <main>
             <header>
-
-                
                 <a href="perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
                 <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
             </header>

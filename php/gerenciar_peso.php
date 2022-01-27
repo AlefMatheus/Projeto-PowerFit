@@ -16,6 +16,22 @@ session_start();
     <link rel="stylesheet" href="../plugins/jquery/sweetalert/dist/sweetalert2.min.css">
     <title>Gerenciar Peso</title>
 </head>
+<style>
+    @media screen and (max-width: 768px) {
+        .panel-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        button.panel {
+            width: 100%;
+            height: 100%;
+            margin: 20px;
+            padding: 15px;
+            font-size: 0.85rem;
+        }
+    }
+</style>
 
 <body>
     <div class="flex-dashboard">

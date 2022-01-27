@@ -40,6 +40,21 @@ session_start()
         font-family: Comfortaa;
         font-size: 0.95rem;
     }
+    ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            
+             ::-webkit-scrollbar-track {
+                background-color: rgb(12, 12, 12);
+                box-shadow: inset 0 0 5px rgb(22, 22, 22);
+            }
+            
+             ::-webkit-scrollbar-thumb {
+                background: rgb(255, 143, 9);
+                background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+                border-radius: 100px;
+            }
 </style>
 
 <body>
