@@ -33,28 +33,30 @@ session_start()
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
     body,
     html {
-        height: 100% !important; 
+        height: 100% !important;
         width: 100%;
         font-family: Comfortaa;
         font-size: 0.95rem;
     }
+
     ::-webkit-scrollbar {
-                width: 10px;
-                height: 10px;
-            }
-            
-             ::-webkit-scrollbar-track {
-                background-color: rgb(12, 12, 12);
-                box-shadow: inset 0 0 5px rgb(22, 22, 22);
-            }
-            
-             ::-webkit-scrollbar-thumb {
-                background: rgb(255, 143, 9);
-                background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
-                border-radius: 100px;
-            }
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgb(12, 12, 12);
+        box-shadow: inset 0 0 5px rgb(22, 22, 22);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(255, 143, 9);
+        background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+        border-radius: 100px;
+    }
 </style>
 
 <body>
@@ -63,24 +65,25 @@ session_start()
         <div class="login-form">
             <div class="login-form-wrapper" data-aos="fade-down" data-aos-duration="1000">
                 <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
-                    <h1 id="textH1" class="text-left"><a id="btn-back-index" href="../views/index.php">PowerFit</a> - Login</h1>
+                    <h1 id="textH1" class="text-left"><a id="btn-back-index" href="../views/index.php">PowerFit</a> -
+                        Login</h1>
                     <p style="color: rgb(0, 0, 0);">Junte-se a nós :)</p>
                 </div>
-                    <?php
+                <?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
-                    <div class="alert alert-danger" role="alert">
-                        <p>Usuario ou senha Invalidos</p>
-                    </div>
-                    <?php
+                <div class="alert alert-danger" role="alert">
+                    <p>Usuario ou senha Invalidos</p>
+                </div>
+                <?php
                     endif;
                     unset($_SESSION['nao_autenticado']);
-                    ?>   
+                    ?>
                 <form id="form" action="login.php" method="POST">
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Email:</label>
-                        <input type="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                            placeholder="exemple@email.com">
+                        <input type="email" name="email" class="form-control" id="inputEmail"
+                            aria-describedby="emailHelp" placeholder="exemple@email.com">
                     </div>
                     <div class="mb-3">
                         <label for="inputSenha" class="form-label">Senha:</label>

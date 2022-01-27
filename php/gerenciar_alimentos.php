@@ -22,6 +22,7 @@ include('verifica_login.php');
             flex-direction: column;
             width: 100%;
         }
+
         button.panel {
             width: 100%;
             height: 100%;
@@ -34,20 +35,20 @@ include('verifica_login.php');
 
 <body>
     <div class="flex-dashboard">
-    <sidebar>
+        <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li >
+                    <li>
                         <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
+                        <a href="gerenciar_pressao_arterial.php"> <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
@@ -72,48 +73,50 @@ include('verifica_login.php');
                     <h2>Gerenciar Alimentos</h2>
                 </div>
                 <div class="panel-row">
-                    <button class="panel panel-50" a-script="alimentos" a-view="cadastrarAlimentos" onclick="fetchContent(this)"
-                        a-folder="alimentos"> <i class="fas fa-plus"></i> Cadastrar Alimentos</button>
-                    <button class="panel panel-50" a-script="alimentos" a-view="visualizarAlimentos" onclick="fetchContent(this)"
-                        a-folder="alimentos"> <i class="fas fa-table"></i> Visualizar Alimentos</button>
+                    <button class="panel panel-50" a-script="alimentos" a-view="cadastrarAlimentos"
+                        onclick="fetchContent(this)" a-folder="alimentos"> <i class="fas fa-plus"></i> Cadastrar
+                        Alimentos</button>
+                    <button class="panel panel-50" a-script="alimentos" a-view="visualizarAlimentos"
+                        onclick="fetchContent(this)" a-folder="alimentos"> <i class="fas fa-table"></i> Visualizar
+                        Alimentos</button>
                 </div>
                 <?php
                     if (isset($_SESSION['status_cadastro'])):
                     ?>
-                    <div class="alert alert-success" role="alert">
-                        Seu registro foi realizado com sucesso!
-                    </div>
-                    <?php
+                <div class="alert alert-success" role="alert">
+                    Seu registro foi realizado com sucesso!
+                </div>
+                <?php
                     endif;
                     unset($_SESSION['status_cadastro']);
                     ?>
-                    <?php
+                <?php
                     if (isset($_SESSION['campo_vazio'])):
                     ?>
-                    <div class="alert alert-danger" role="alert">
-                        Preencha todos os campos por favor.
-                    </div>
-                    <?php
+                <div class="alert alert-danger" role="alert">
+                    Preencha todos os campos por favor.
+                </div>
+                <?php
                     endif;
                     unset($_SESSION['campo_vazio']);
                     ?>
-                    <?php
+                <?php
                     if (isset($_SESSION['status_alteracao'])):
                     ?>
-                    <div class="alert alert-success" role="alert">
-                        Sua ateraçao foi realizada com sucesso!
-                    </div>
-                    <?php
+                <div class="alert alert-success" role="alert">
+                    Sua ateraçao foi realizada com sucesso!
+                </div>
+                <?php
                     endif;
                     unset($_SESSION['status_alteracao']);
                     ?>
-                    <?php
+                <?php
                     if (isset($_SESSION['status_exclusao'])):
                     ?>
-                    <div class="alert alert-success" role="alert">
-                        Exclusao de registro realizado com sucesso!
-                    </div>
-                    <?php
+                <div class="alert alert-success" role="alert">
+                    Exclusao de registro realizado com sucesso!
+                </div>
+                <?php
                     endif;
                     unset($_SESSION['status_exclusao']);
                     ?>
@@ -126,7 +129,7 @@ include('verifica_login.php');
     </div>
 
     <script type="text/javascript">
-        function pegarDados(id, alimento){
+        function pegarDados(id, alimento) {
             document.getElementById('alimento').innerHTML = alimento;
             document.getElementById('idAlimentos').value = id;
         } 

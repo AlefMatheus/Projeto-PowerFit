@@ -37,24 +37,24 @@ include('perfil_upload_foto.php');
     <title>Meu Perfil</title>
 </head>
 <style>
-         ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }
-        
-         ::-webkit-scrollbar-track {
-            background-color: rgb(12, 12, 12);
-            box-shadow: inset 0 0 5px rgb(22, 22, 22);
-        }
-        
-         ::-webkit-scrollbar-thumb {
-            background: rgb(255, 143, 9);
-            background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
-            border-radius: 100px;
-        }
-    </style>
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
 
-    <body>
+    ::-webkit-scrollbar-track {
+        background-color: rgb(12, 12, 12);
+        box-shadow: inset 0 0 5px rgb(22, 22, 22);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(255, 143, 9);
+        background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+        border-radius: 100px;
+    }
+</style>
+
+<body>
 
     <!--NAV BAR-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
@@ -72,26 +72,26 @@ include('perfil_upload_foto.php');
                 <div id="barraNav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="../php/dashboard.php">MEU DASHBOARD</a></li>
-                            <li class="dropdownn">
+                        <li class="dropdownn">
 
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">DICAS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../views/resumoMusculacao.html">EXERCICÍOS FÍSICOS</a></li>
-                                    <li><a href="../views/resumoNutricao.html">NUTRIÇÃO</a></li>
-                                    <li><a href="../views/resumoSaude.html">SAÚDE</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="dropdownn">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../views/modmusculacao.html">MUSCULAÇÃO</a></li>
-                                    <li><a href="../views/modnatacao.html">NATAÇÃO</a></li>
-                                    <li><a href="../views/modcross.html">CROSSFIT</a></li>
-                                    <li><a href="../views/modpilates.html">PILATES</a></li>
-                                </ul>
-                            </li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">DICAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../views/resumoMusculacao.html">EXERCICÍOS FÍSICOS</a></li>
+                                <li><a href="../views/resumoNutricao.html">NUTRIÇÃO</a></li>
+                                <li><a href="../views/resumoSaude.html">SAÚDE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdownn">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../views/modmusculacao.html">MUSCULAÇÃO</a></li>
+                                <li><a href="../views/modnatacao.html">NATAÇÃO</a></li>
+                                <li><a href="../views/modcross.html">CROSSFIT</a></li>
+                                <li><a href="../views/modpilates.html">PILATES</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="../php/painel_usuario.php"><span class="glyphicon glyphicon-log-in"></span>
@@ -117,18 +117,18 @@ include('perfil_upload_foto.php');
             <div data-aos="fade" data-aos-duration="1000" class="perfil">
                 <div class="perfil-img">
                     <div class="img">
-                    <?php 
+                        <?php 
                     if(isset($_SESSION['foto-de-perfil'])):
                     ?>
-                    <img src="../upload/<?php echo($_SESSION['foto-de-perfil'])?>" id="imgDefault">
-                    <?php
+                        <img src="../upload/<?php echo($_SESSION['foto-de-perfil'])?>" id="imgDefault">
+                        <?php
                     endif;
                     ?>
-                    <?php
+                        <?php
                     if(isset($_SESSION['foto-de-perfil']) != true ):
                     ?>
-                    <img src="../img/perfil.png" id="imgDefault">
-                    <?php
+                        <img src="../img/perfil.png" id="imgDefault">
+                        <?php
                     endif;
                     ?>
                     </div>
@@ -194,7 +194,7 @@ include('perfil_upload_foto.php');
     </div>
 
     <!--FIM CONTEUDO-->
-    
+
     <script src="../js/perfil-input-img.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -229,10 +229,12 @@ include('perfil_upload_foto.php');
     .navbar-top1 {
         transition: 0.5s;
     }
-        @media screen and (max-width: 1150px){ 
-        .navbar-collapse{
+
+    @media screen and (max-width: 1150px) {
+        .navbar-collapse {
             background-color: rgba(5, 5, 5);
         }
+
         .navbar-top {
             background-color: rgba(5, 5, 5);
         }
