@@ -1,6 +1,6 @@
 <?php
 include('conexao.php');
-session_start();
+include('verifica_login.php');
 
 $id = $_GET['id'] ?? ''; 
 $sql = "select * from peso_usuario where idPeso = $id";

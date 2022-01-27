@@ -1,5 +1,7 @@
 <?php
+include('verifica_login.php');
 include('perfil_upload_foto.php');
+
 ?>
 
     <!DOCTYPE html>

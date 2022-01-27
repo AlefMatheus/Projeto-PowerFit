@@ -1,6 +1,6 @@
 <?php
 include('conexao.php');
-session_start();
+include('verifica_login.php');
 
 if(empty($_POST['pressao'])){
     $_SESSION['campo_vazio'] = true;

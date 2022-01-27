@@ -1,6 +1,4 @@
 <?php  
-session_start();
-
 include('conexao.php');
 
 if(isset($_FILES['imagem'])){

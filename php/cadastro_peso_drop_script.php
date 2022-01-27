@@ -1,6 +1,6 @@
 <?php
 include('conexao.php');
-session_start();
+include('verifica_login.php');
 
 $id = ($_POST['id']);
 $sql = "delete from peso_usuario where idPeso = $id";

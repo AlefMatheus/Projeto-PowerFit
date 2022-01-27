@@ -1,4 +1,5 @@
 <?php
+include('verifica_login.php');
 if (isset($_SESSION['usuario'])){
 
     //captura os dados do usuario na tabela peso

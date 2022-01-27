@@ -1,5 +1,5 @@
 <?php
-session_start();
+include('verifica_login.php');
 include ('conexao.php');
 
 $peso = $_POST['peso'];
