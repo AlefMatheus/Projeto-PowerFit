@@ -32,7 +32,7 @@ include('conexao.php');
         <td scope='row'>$data_peso</td>
         <td>$peso kg</td>
         <td>$altura m</td>
-        <td><a href='cadastro_peso_edit.php?id=$idPeso' class='btn btn-primary btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
+        <td><a href='cadastro_peso_edit.php?id=$idPeso' class='btn btn-dark btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
         <td><a href='#' class='btn btn-danger btn-sm' data-bs-toggle='modal' data-bs-target='#confirma'
         onclick=" .'"' ."pegarDados($idPeso, '$peso')" .'"' ."><i class='fas fa-trash-alt'></i> Deletar</a></td>
       </tr>";   

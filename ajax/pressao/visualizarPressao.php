@@ -27,7 +27,7 @@ include('conexao.php');
         "<tr>
         <td scope='row'>$data_pressao</td>
         <td>$pressao MMHC</td>
-        <td><a href='cadastro_pressao_edit.php?id=$idPressao' class='btn btn-primary btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
+        <td><a href='cadastro_pressao_edit.php?id=$idPressao' class='btn btn-dark btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
         <td><a href='#' class='btn btn-danger btn-sm' data-bs-toggle='modal' data-bs-target='#confirma'
         onclick=" .'"' ."pegarDados($idPressao, '$pressao')" .'"' ."><i class='fas fa-trash-alt'></i> Deletar</a></td>
       </tr>";   

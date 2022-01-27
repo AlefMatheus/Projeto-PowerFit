@@ -31,7 +31,7 @@ include('conexao.php');
       <td scope='row'>$data_atividade</td>
       <td>$atividade</td>
       <td>$duracao</td>
-      <td><a href='cadastro_atividade_edit.php?id=$idAtividade' class='btn btn-primary btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
+      <td><a href='cadastro_atividade_edit.php?id=$idAtividade' class='btn btn-dark btn-sm'> <i class='fas fa-sync-alt'></i> Editar</a></td>
       <td><a href='#' class='btn btn-danger btn-sm' data-bs-toggle='modal' data-bs-target='#confirma'
       onclick=" .'"' ."pegarDados($idAtividade, '$atividade')" .'"' ."><i class='fas fa-trash-alt'></i> Deletar</a></td>
     </tr>";   
