@@ -49,6 +49,11 @@ include('perfil_upload_foto.php');
             background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
             border-radius: 100px;
         }
+        @media screen and (max-width: 1150px){
+            #mainMedia {
+        margin-top: -25px;
+    }
+        }
     </style>
 
     <body>
