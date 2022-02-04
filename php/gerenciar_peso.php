@@ -23,6 +23,7 @@ include('verifica_login.php');
             flex-direction: column;
             width: 100%;
         }
+
         button.panel {
             width: 100%;
             height: 100%;
@@ -35,20 +36,20 @@ include('verifica_login.php');
 
 <body>
     <div class="flex-dashboard">
-    <sidebar>
+        <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li >
+                    <li>
                         <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
+                        <a href="gerenciar_pressao_arterial.php"> <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
@@ -63,7 +64,7 @@ include('verifica_login.php');
             </div>
         </sidebar>
         <main>
-            <header>          
+            <header>
                 <a href="perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
                 <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
             </header>
@@ -73,10 +74,12 @@ include('verifica_login.php');
                     <h2>Gerenciar Peso e Altura</h2>
                 </div>
                 <div class="panel-row">
-                    <button class="panel panel-50" a-script="pesoAltura" a-view="cadastrarPeso" onclick="fetchContent(this)" a-folder="peso">
+                    <button class="panel panel-50" a-script="pesoAltura" a-view="cadastrarPeso"
+                        onclick="fetchContent(this)" a-folder="peso">
                         <i class="fas fa-plus"></i>
                         Cadastrar peso e altura</button>
-                    <button class="panel panel-50" a-script="pesoAltura" a-view="visualizarPeso" onclick="fetchContent(this)" a-folder="peso">
+                    <button class="panel panel-50" a-script="pesoAltura" a-view="visualizarPeso"
+                        onclick="fetchContent(this)" a-folder="peso">
                         <i class="fas fa-table"></i>
                         Visualizar peso e altura</button>
                 </div>
@@ -127,12 +130,12 @@ include('verifica_login.php');
     </div>
 
     <script type="text/javascript">
-        function pegarDados(id, peso){
+        function pegarDados(id, peso) {
             document.getElementById('peso').innerHTML = peso;
             document.getElementById('idPeso').value = id;
         } 
     </script>
-    
+
 
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/jquery/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
@@ -148,7 +151,7 @@ include('verifica_login.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
         integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
 
 </body>
 

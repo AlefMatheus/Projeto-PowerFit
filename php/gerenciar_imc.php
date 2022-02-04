@@ -18,44 +18,49 @@ include('verifica_login.php');
 </head>
 <style>
     @media screen and (max-width: 768px) {
-        .calculaImc{
+        .calculaImc {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
-        button{
+
+        button {
             margin-top: 20px;
             margin-left: 20px;
         }
-        #resultado{
+
+        #resultado {
             padding: 10px;
             margin-top: -50px;
             margin-left: 20px;
         }
-        h2{
+
+        h2 {
             font-size: 1.3rem;
         }
-        h4{
+
+        h4 {
             font-size: 1.2rem;
         }
     }
 </style>
+
 <body>
     <div class="flex-dashboard">
-    <sidebar>
+        <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li >
+                    <li>
                         <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
+                        <a href="gerenciar_pressao_arterial.php"> <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
@@ -75,9 +80,9 @@ include('verifica_login.php');
                 <a href="../php/painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> VOLTAR</a>
             </header>
             <div class="main-content">
-            <div class="main-content-title">
-                        <h2 id="content-title-h2">GERENCIAR IMC</h2>
-                    </div>
+                <div class="main-content-title">
+                    <h2 id="content-title-h2">GERENCIAR IMC</h2>
+                </div>
                 <form action="gerenciar_imc_script.php" name="formImc" method="POST">
                     <div class="imc-parent">
                         <div class="calculaImc">
@@ -90,10 +95,10 @@ include('verifica_login.php');
                         <?php
                             if (isset($_SESSION['campo_vazio'])):
                             ?>
-                            <div class="alert" role="alert">
-                                <h5>preencha todos os campos por favor.</h5>
-                            </div>
-                            <?php
+                        <div class="alert" role="alert">
+                            <h5>preencha todos os campos por favor.</h5>
+                        </div>
+                        <?php
                             endif;
                             unset($_SESSION['campo_vazio']);
                         ?>
@@ -101,8 +106,12 @@ include('verifica_login.php');
                             <?php
                             if(isset($_SESSION['valorImc']) and (isset($_SESSION['situacao']))):
                             ?>
-                            <h2>Seu imc é: <b id="value-imc"><?php echo($_SESSION['valorImc'])?></b></h2>
-                            <h4><?php echo $_SESSION['situacao'];?></h4> 
+                            <h2>Seu imc é: <b id="value-imc">
+                                    <?php echo($_SESSION['valorImc'])?>
+                                </b></h2>
+                            <h4>
+                                <?php echo $_SESSION['situacao'];?>
+                            </h4>
                             <?php
                             endif;
                             //unset($_SESSION['valorImc']);
@@ -128,12 +137,14 @@ include('verifica_login.php');
     <script src="../plugins/jquery/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/ajax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript">
         $(function () {
-        $('#peso').mask("000.00", {reverse: true})
-        $('#altura').mask("0.00", {reverse: true})
+            $('#peso').mask("000.00", { reverse: true })
+            $('#altura').mask("0.00", { reverse: true })
         });
     </script>
 </body>

@@ -50,30 +50,33 @@ include("conexao.php")
     .login-form-wrapper {
         height: 100%;
     }
+
     ::-webkit-scrollbar {
-                width: 10px;
-                height: 10px;
-            }
-            
-             ::-webkit-scrollbar-track {
-                background-color: rgb(12, 12, 12);
-                box-shadow: inset 0 0 5px rgb(22, 22, 22);
-            }
-            
-             ::-webkit-scrollbar-thumb {
-                background: rgb(255, 143, 9);
-                background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
-                border-radius: 100px;
-            }
-            @media only screen and (max-width: 768px){
-                .login-form-wrapper{
-                    margin: 30px;
-                    margin-left: 35px;
-                }
-                h3#textH1{
-                    font-size: 1.3rem;
-                }
-            }
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgb(12, 12, 12);
+        box-shadow: inset 0 0 5px rgb(22, 22, 22);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(255, 143, 9);
+        background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+        border-radius: 100px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .login-form-wrapper {
+            margin: 30px;
+            margin-left: 35px;
+        }
+
+        h3#textH1 {
+            font-size: 1.3rem;
+        }
+    }
 </style>
 
 <body>
@@ -81,7 +84,8 @@ include("conexao.php")
         <div class="login-form">
             <div class="login-form-wrapper" data-aos="fade-down" data-aos-duration="1000">
                 <div data-aos="fade-right" data-aos-duration="1000" id="bannerLogin">
-                    <h3 id="textH1" class="text-left"><a id="btn-back-index" href="../views/index.php">PowerFit</a> - Cadastro</h3>
+                    <h3 id="textH1" class="text-left"><a id="btn-back-index" href="../views/index.php">PowerFit</a> -
+                        Cadastro</h3>
                     <p style="color: rgb(0, 0, 0);">Junte-se a nós!</p>
                 </div>
                 <form id="form" action="../php/cadastrar_usuario.php" method="POST">
@@ -110,7 +114,7 @@ include("conexao.php")
                     if (isset($_SESSION['campo_vazio'])):
                     ?>
                     <div class="alert alert-danger" role="alert">
-                        <p>Preencha todos os campos fdp</p>
+                        <p>Preencha todos os campos por favor.</p>
                     </div>
                     <?php
                     endif;

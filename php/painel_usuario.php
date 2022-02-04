@@ -31,27 +31,29 @@ include('verifica_login.php');
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
 
-    <title>Bem vindo, <?php echo ($_SESSION['usuario']);?>!</title>
+    <title>Bem vindo,
+        <?php echo ($_SESSION['usuario']);?>!
+    </title>
     <link rel="stylesheet" href="../css/estiloSocio.css">
 
 </head>
 
 <style>
     ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
+        width: 10px;
+        height: 10px;
+    }
 
- ::-webkit-scrollbar-track {
-    background-color: rgb(12, 12, 12);
-    box-shadow: inset 0 0 5px rgb(22, 22, 22);
-}
+    ::-webkit-scrollbar-track {
+        background-color: rgb(12, 12, 12);
+        box-shadow: inset 0 0 5px rgb(22, 22, 22);
+    }
 
- ::-webkit-scrollbar-thumb {
-    background: rgb(255, 143, 9);
-    background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
-    border-radius: 100px;
-}
+    ::-webkit-scrollbar-thumb {
+        background: rgb(255, 143, 9);
+        background: linear-gradient(0deg, rgb(255, 91, 15) 0%, rgb(252, 101, 0) 43%, rgb(255, 38, 0) 81%, rgb(240, 28, 0) 99%);
+        border-radius: 100px;
+    }
 </style>
 
 
@@ -86,7 +88,8 @@ include('verifica_login.php');
                     </ul>
                     <ul class="nav navbar-nav">
                         <li class="dropdownn">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES<span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODALIDAES<span
+                                    class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="../views/modmusculacao.html">MUSCULAÇÃO</a></li>
                                 <li><a href="../views/modnatacao.html">NATAÇÃO</a></li>
@@ -113,7 +116,9 @@ include('verifica_login.php');
             <video id="background" src="../video/bannerSocio.mp4" autoplay="true" muted="true" loop="true"></video>
         </div>
         <div id="conteudo">
-            <h1 data-aos="fade-up" data-aos-duration="1500" id="content">Olá, <?php echo ($_SESSION['usuario']);?> !</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1500" id="content">Olá,
+                <?php echo ($_SESSION['usuario']);?> !
+            </h1>
 
             <h4 data-aos="fade-up" data-aos-duration="1500" style="margin-top: 20px;">Seja bem vindo à PowerFit! Onde
                 sua saúde é a nossa alegria!</h4>
@@ -134,20 +139,23 @@ include('verifica_login.php');
                     <div data-aos="fade-up" data-aos-duration="500" class="col-sm-3" id="img">
                         <h3 id="subTitulo" class="text-center">Musculação</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/FKSsmyn/Design-sem-nome-14.png" />
-                        <p class="text-center"><a href="../views/modmusculacao.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Confira
+                        <p class="text-center"><a href="../views/modmusculacao.html" id="btsaiba"
+                                class="btn btn-info btn-lg" role="button">Confira
                                 &raquo;</a></p>
 
                     </div>
                     <div data-aos="fade-up" data-aos-duration="500" class="col-sm-3" id="img">
                         <h3 id="subTitulo" class="text-center">Natação</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/sCMKyY0/Design-sem-nome-13.png" />
-                        <p  class="text-center"><a href="../views/modnatacao.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Confira
+                        <p class="text-center"><a href="../views/modnatacao.html" id="btsaiba"
+                                class="btn btn-info btn-lg" role="button">Confira
                                 &raquo;</a></p>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="500" class="col-sm-3" id="img">
                         <h3 id="subTitulo" class="text-center">CrossFit</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/8syZ6Mr/Design-sem-nome-15.png" />
-                        <p class="text-center"><a href="../views/modcross.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Confira
+                        <p class="text-center"><a href="../views/modcross.html" id="btsaiba" class="btn btn-info btn-lg"
+                                role="button">Confira
                                 &raquo;</a></p>
 
 
@@ -155,7 +163,8 @@ include('verifica_login.php');
                     <div data-aos="fade-up" data-aos-duration="500" class="col-sm-3" id="img">
                         <h3 id="subTitulo" class="text-center">Pilates</h3>
                         <img class="img-responsive img-rounded" src="https://i.ibb.co/whyxPXJ/Design-sem-nome-16.png" />
-                        <p class="text-center"><a href="../views/modpilates.html" id="btsaiba" class="btn btn-info btn-lg" role="button">Confira
+                        <p class="text-center"><a href="../views/modpilates.html" id="btsaiba"
+                                class="btn btn-info btn-lg" role="button">Confira
                                 &raquo;</a></p>
 
 
@@ -174,7 +183,8 @@ include('verifica_login.php');
             <div class="col-sm-6" id="area-dicas">
                 <h2 data-aos="fade-up" data-aos-duration="1000" class="text-center" id="textTitulos2">ÁREA DE DICAS</h2>
 
-                <h4 data-aos="fade-up" data-aos-duration="500" class="text-center" id="textTitulos3">Algumas dicas poderosíssimas para
+                <h4 data-aos="fade-up" data-aos-duration="500" class="text-center" id="textTitulos3">Algumas dicas
+                    poderosíssimas para
                     elevar seu desempenho!</h4>
                 <div class="row" id="imgDicas">
                     <div data-aos="fade-up" data-aos-duration="500" class="col-sm-6">
@@ -251,7 +261,8 @@ include('verifica_login.php');
     <div id="principal">
         <div id="subPrincipal" class="container">
             <h2 id="h2Foot">Sobre o PowerFit:</h2>
-            <p id="textFooter">O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua saúde, bem estar e muito mais!</p>
+            <p id="textFooter">O PowerFit - SGT é um sistema que te permite controlar seu dia a dia na academia, sua
+                saúde, bem estar e muito mais!</p>
         </div>
         <br>
         <div class="container"></div>
@@ -306,6 +317,7 @@ include('verifica_login.php');
     .navbar-top {
         background-color: rgba(255, 255, 255, 0);
     }
+
     .navbar-top1 {
         transition: 0.5s;
     }

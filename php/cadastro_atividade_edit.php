@@ -20,7 +20,7 @@ $linha = mysqli_fetch_assoc($dados);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/main.css">
-    
+
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../plugins/jquery/sweetalert/dist/sweetalert2.min.css">
@@ -29,20 +29,20 @@ $linha = mysqli_fetch_assoc($dados);
 
 <body>
     <div class="flex-dashboard">
-    <sidebar>
+        <sidebar>
             <div class="sidebar-title">
                 <h2>PowerFit</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li >
+                    <li>
                         <a id="dashPanel" href="dashboard.php"> <i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_peso.php"><i class="fas fa-weight"></i></a>
                     </li>
                     <li>
-                        <a href="gerenciar_pressao_arterial.php">  <i class="fas fa-heartbeat"></i></a>
+                        <a href="gerenciar_pressao_arterial.php"> <i class="fas fa-heartbeat"></i></a>
                     </li>
                     <li>
                         <a href="gerenciar_atividade_fisica.php"><i class="fas fa-skating"></i></a>
@@ -57,7 +57,7 @@ $linha = mysqli_fetch_assoc($dados);
             </div>
         </sidebar>
         <main>
-            <header>          
+            <header>
                 <a href="perfil.php"> <i class="fas fa-user"></i> PERFIL</a>
                 <a href="painel_usuario.php"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
             </header>
@@ -67,24 +67,27 @@ $linha = mysqli_fetch_assoc($dados);
                     <h2>Editar Atividades</h2>
                 </div>
                 <div class="content" id="ajax-content">
-                <div class="dynamic-content">
-                    <form id="atividade-form"  action="cadastro_atividade_edit_script.php" method="POST">
-                        <div class="mb-3">
-                        <label for="name" class="form-label">Nome da Atividade</label>
-                        <input type="text" name="nome" class="form-control" id="name" placeholder="Altere o nome de sua atividade">
-                        </div>
-                        <div class="mb-3">
-                        <label for="time" class="form-label">Tempo de atividade</label>
-                        <input type="text" name="tempo" class="form-control" id="activity-duration"placeholder="Altere o tempo de atividade" >
-                        </div>
-                        <div class="mb-3">
-                        <label for="date" class="form-label">Data</label>
-                        <input type="text" name="data" class="form-control" id="activity-date" placeholder="Altere a data de sua atividade">
-                        </div>
-                        <button type="submit" class="btn">Salvar Alteracoes</button>
-                        <input type="hidden" name="id" value="<?php echo $linha['idAtividade']?>">
-                    </form>
-                </div>
+                    <div class="dynamic-content">
+                        <form id="atividade-form" action="cadastro_atividade_edit_script.php" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome da Atividade</label>
+                                <input type="text" name="nome" class="form-control" id="name"
+                                    placeholder="Altere o nome de sua atividade">
+                            </div>
+                            <div class="mb-3">
+                                <label for="time" class="form-label">Tempo de atividade</label>
+                                <input type="text" name="tempo" class="form-control" id="activity-duration"
+                                    placeholder="Altere o tempo de atividade">
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Data</label>
+                                <input type="text" name="data" class="form-control" id="activity-date"
+                                    placeholder="Altere a data de sua atividade">
+                            </div>
+                            <button type="submit" class="btn">Salvar Alteracoes</button>
+                            <input type="hidden" name="id" value="<?php echo $linha['idAtividade']?>">
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -104,7 +107,7 @@ $linha = mysqli_fetch_assoc($dados);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
         integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
 
 </body>
 
